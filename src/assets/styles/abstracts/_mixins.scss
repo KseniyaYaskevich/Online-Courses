@@ -1,0 +1,28 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin reset-btn {
+  padding: 0;
+
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+@mixin font ($size, $height: $size, $weight: normal, $style: normal) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+// @mixin media-desktop {
+//   @media (max-width: $desktop-width) {
+//     @content;
+//   }
+// }
