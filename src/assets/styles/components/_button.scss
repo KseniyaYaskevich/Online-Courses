@@ -1,0 +1,39 @@
+.button {
+  @include reset-btn;
+
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+
+  border-radius: 0.25rem;
+
+  &--size {
+
+    &-large {
+      padding: 0 2.5rem;
+      @include font(1rem, 3.25rem, 700);
+    }
+
+    &-regular {
+      padding: 0 2rem;
+      @include font(0.875rem, 2.75rem, 700);
+    }
+
+    &-small {
+      padding: 0 1.5rem;
+      @include font(0.75rem, 2.25rem, 700);
+    }
+  }
+
+  &--color {
+
+    &-gradient {
+      color: $color-white;
+      background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    }
+
+    &-transparent {
+      color: $color-primary;
+      border: 0.063rem solid $color-primary;
+    }
+  }
+}
