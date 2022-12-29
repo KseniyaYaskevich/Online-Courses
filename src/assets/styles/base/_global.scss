@@ -11,12 +11,27 @@ html {
 }
 
 body {
-  font-family: $font-family--lato;
+  display: grid;
+  grid-template-rows: min-content auto min-content;
+  grid-template-columns: 100%;
+
+  min-height: 100vh;
+  min-width: $mobile-width;
+  max-width: 100%;
+  
   @include font(1rem, 160%);
+  font-family: $font-family--lato;
+  color: $color-gray--800;
 }
 
 img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
+}
+
+.container {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
 }
