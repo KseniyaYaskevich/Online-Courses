@@ -51,7 +51,7 @@ const jsLoaders = () => {
 const config = {
   entry: {
     index: path.resolve(__dirname, './src/pages/index/index.js'),
-    catalog: path.resolve(__dirname, './src/pages/courses/courses.js'),
+    courses: path.resolve(__dirname, './src/pages/courses/courses.js'),
   },
   output: {
     filename: './scripts/[name].bundle.js',
