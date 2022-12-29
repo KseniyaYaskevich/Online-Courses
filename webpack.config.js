@@ -70,6 +70,7 @@ const config = {
       assets: path.resolve(__dirname, './src/assets'),
       scripts: path.resolve(__dirname, './src/assets/scripts'),
       styles: path.resolve(__dirname, './src/assets/styles'),
+      images: path.resolve(__dirname, './src/assets/images'),
     },
   },
   plugins: [
