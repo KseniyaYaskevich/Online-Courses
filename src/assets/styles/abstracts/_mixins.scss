@@ -14,8 +14,8 @@
   font-style: $style;
 }
 
-// @mixin media-desktop {
-//   @media (max-width: $desktop-width) {
-//     @content;
-//   }
-// }
+@mixin media-max-tablet {
+  @media (max-width: $max-tablet-width) {
+    @content;
+  }
+}
