@@ -31,9 +31,10 @@
 }
 
 .main-nav__list {
-  @include reset-list;
   display: flex;
   flex-wrap: wrap;
+
+  list-style: none;
 }
 
 .main-nav__item {
