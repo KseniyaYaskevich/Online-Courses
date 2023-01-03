@@ -10,6 +10,10 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    @include media-max-tablet {
+      flex-wrap: wrap;
+    }
   }
 }
 
@@ -20,6 +24,10 @@
 
 .page-header__account {
   margin-left: auto;
+
+  @include media-max-tablet {
+    flex-basis: 100%
+  }
 }
 
 .main-nav__list {
