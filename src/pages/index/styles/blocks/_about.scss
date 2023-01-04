@@ -1,14 +1,21 @@
 .about {
+  padding-top: 11.25rem;
   margin-bottom: 11.25rem;
 
   & .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 8.438rem;
+    gap: 8.438rem;
 
     @include media-max-tablet {
-      grid-template-columns: none;
+      grid-template-columns: 1fr;
+      gap: 5rem;
     }
+  }
+
+  @include media-max-tablet {
+    padding-top: 7rem;
+    margin-bottom: 7rem;
   }
 }
 
@@ -24,6 +31,14 @@
   @include media-max-tablet {
     min-width: auto;
     min-height: auto;
+    margin: 0 auto;
+  }
+}
+
+.about__content {
+
+  @include media-max-tablet {
+    margin: 0 auto;
   }
 }
 
