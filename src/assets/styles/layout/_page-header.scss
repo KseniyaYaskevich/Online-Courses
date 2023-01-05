@@ -94,6 +94,12 @@
   margin-right: 3.75rem;
 }
 
+.navbar__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .navbar__menu {
 
   @include media-max-tablet {
