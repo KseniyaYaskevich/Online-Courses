@@ -127,6 +127,19 @@
   @include font(1rem, 160%, 700);
   text-decoration: none;
   color: $color-gray--800;
+
+  transition: color .3s ease-out;
+
+  &--active {
+    color: $color-primary;
+
+    pointer-events: none;
+    cursor: default;
+  }
+
+  &:hover {
+    color: $color-primary;
+  }
 }
 
 .account {
@@ -151,6 +164,12 @@
 
   @include font(1rem, 160%, 700);
   color: $color-gray--800;
+
+  transition: color .3s ease-out;
+
+  &:hover {
+    color: $color-primary;
+  }
 }
 
 .account__slash {
