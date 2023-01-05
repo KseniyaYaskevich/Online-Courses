@@ -5,6 +5,76 @@
     background: linear-gradient(55deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
+
+  &--page-index {
+    position: relative;
+    overflow: hidden;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &::before {
+      top: -1.5rem;
+      right: 6rem;
+
+      width: 6.875rem;
+      height: 6.875rem;
+
+      background-image: url("~images/index/header/arrows-white.svg");
+    }
+
+    &::after {
+      bottom: -6rem;
+      left: -7rem;
+
+      width: 17.75rem;
+      height: 17.75rem;
+
+      background-image: url("~images/index/header/circles-white.svg");
+    }
+
+    & .container {
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      &::before {
+        top: 8.313rem;
+        left: 5.125rem;
+
+        width: 6.875rem;
+        height: 6.875rem;
+
+        transform: rotate(-135deg);
+
+        background-image: url("~images/index/header/arrows-white.svg");
+      }
+
+      &::after {
+        bottom: 12.125rem;
+        right: -1.938rem;
+
+        width: 11.688rem;
+        height: 8.563rem;
+
+        background-image: url("~images/index/header/dots-white.svg");
+      }
+    }
+  }
 }
 
 .page-header__navbar {

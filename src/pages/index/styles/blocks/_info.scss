@@ -22,6 +22,31 @@
   }
 }
 
+.info__content {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -8.4rem;
+    z-index: -1;
+
+    width: 3.813rem;
+    height: 3.813rem;
+
+    background-image: url("~images/index/header/half-circle-white.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include media-max-tablet {
+      right: auto;
+      bottom: -6rem;
+      left: 8rem;
+    }
+  }
+}
+
 .info__play-video {
   display: inline-flex;
   align-items: center;
@@ -51,6 +76,8 @@
 }
 
 .info__title {
+  position: relative;
+
   margin: 0;
   margin-bottom: 3.75rem;
 
@@ -60,6 +87,26 @@
 
   @include media-max-tablet {
     text-align: center;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -4rem;
+    bottom: 2.6rem;
+    z-index: -1;
+
+    width: 5.5rem;
+    height: 2.75rem;
+
+    background-image: url("~images/index/header/bold-arrows-white.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include media-max-tablet {
+      right: 8rem;
+      bottom: -1rem;
+    }
   }
 }
 

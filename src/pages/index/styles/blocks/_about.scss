@@ -1,6 +1,45 @@
 .about {
+  position: relative;
+
   padding-top: 11.25rem;
   margin-bottom: 11.25rem;
+
+  @include media-max-tablet {
+    padding-top: 7rem;
+    margin-bottom: 7rem;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &::before {
+    top: 15rem;
+    left: -5.6rem;
+
+    width: 11.313rem;
+    height: 8.25rem;
+
+    transform: rotate(-52deg);
+
+    background-image: url("~images/index/about/dots-yellow.svg");
+  }
+
+  &::after {
+    right: -9rem;
+    bottom: 0;
+
+    width: 17.938rem;
+    height: 17.938rem;
+
+    background-image: url("~images/index/about/circles-yellow.svg");
+  }
 
   & .container {
     display: grid;
@@ -12,16 +51,6 @@
       gap: 5rem;
     }
   }
-
-  @include media-max-tablet {
-    padding-top: 7rem;
-    margin-bottom: 7rem;
-  }
-}
-
-.about__subtitle,
-.about__title {
-  color: $color-gray--900;
 }
 
 .about__image {
