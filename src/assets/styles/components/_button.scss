@@ -5,6 +5,7 @@
   white-space: nowrap;
 
   border-radius: 0.25rem;
+  transition: color .3s ease;
 
   &--size {
 
@@ -29,12 +30,25 @@
     &-gradient {
       color: $color-white;
       background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+
+      &:hover {
+        color: $color-primary;
+        outline: 0.063rem solid $color-primary;
+        outline-offset: -0.063rem;
+        background: transparent;
+      }
     }
 
     &-transparent {
       color: $color-primary;
       outline: 0.063rem solid $color-primary;
       outline-offset: -0.063rem;
+
+      &:hover {
+        color: $color-white;
+        outline: none;
+        background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+      }
     }
   }
 }
