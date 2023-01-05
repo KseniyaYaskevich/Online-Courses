@@ -26,6 +26,8 @@ body {
   @include font(1rem, 160%);
   font-family: $font-family--lato;
   color: $color-gray--800;
+
+  overflow-x: hidden;
 }
 
 img {
