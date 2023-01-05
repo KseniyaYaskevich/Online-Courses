@@ -43,3 +43,16 @@ img {
     max-width: 900px;
   }
 }
+
+.section__title {
+  @include font(2.875rem, 130%, 900);
+  color: $color-gray--900;
+}
+
+.section__subtitle {
+  margin-bottom: 0.5rem;
+
+  @include font(1rem, 150%, 700);
+  text-transform: uppercase;
+  color: $color-gray--900;
+}
