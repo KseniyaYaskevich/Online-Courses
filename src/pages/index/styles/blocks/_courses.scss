@@ -1,5 +1,13 @@
 .courses {
   margin-bottom: 11.25rem;
+
+  @include media-max-tablet {
+    margin-bottom: 7rem;
+  }
+
+  @include media-max-mobile {
+    margin-bottom: 5rem;
+  }
 }
 
 .courses__header {
@@ -31,6 +39,19 @@
   @include media-max-tablet {
     grid-template-columns: 1fr;
   }
+
+  @include media-max-mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.courses__item {
+  @include media-max-mobile {
+    min-width: 290px;
+    width: 50vw;
+
+    margin: 0 auto;
+  }
 }
 
 .courses-card {
@@ -45,6 +66,13 @@
 
   &:hover {
     box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+  }
+
+  @include media-max-mobile {
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 1.25rem;
   }
 }
 

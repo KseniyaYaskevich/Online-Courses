@@ -2,6 +2,14 @@
   margin-bottom: 7.5rem;
 
   text-align: center;
+
+  @include media-max-tablet {
+    margin-bottom: 7rem;
+  }
+
+  @include media-max-mobile {
+    margin-bottom: 5rem;
+  }
 }
 
 .benefits__title {
@@ -12,6 +20,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @include media-max-mobile {
+    justify-content: center;
+  }
 }
 
 .tabs-nav__button {
@@ -36,6 +48,10 @@
 
   @include media-max-tablet {
     flex-basis: 50%;
+  }
+
+  @include media-max-mobile {
+    flex-basis: 55%;
   }
 }
 

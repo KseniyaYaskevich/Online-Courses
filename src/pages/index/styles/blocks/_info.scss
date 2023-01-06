@@ -5,6 +5,10 @@
   @include media-max-tablet {
     padding-top: 7rem;
   }
+
+  @include media-max-mobile {
+    padding-top: 4rem;
+  }
 }
 
 .info__inner {
@@ -90,10 +94,6 @@
   letter-spacing: 1px;
   color: $color-gray--900;
 
-  @include media-max-tablet {
-    text-align: center;
-  }
-
   &::after {
     content: "";
     position: absolute;
@@ -112,6 +112,14 @@
       right: 8rem;
       bottom: -1rem;
     }
+  }
+
+  @include media-max-tablet {
+    text-align: center;
+  }
+
+  @include media-max-mobile {
+    font-size: 3rem;
   }
 }
 
