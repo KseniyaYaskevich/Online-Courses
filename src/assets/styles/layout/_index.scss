@@ -1,1 +1,5 @@
-@import "./page-header";
+@import "./page-header/page-header";
+@import "./page-header/__navbar/page-header__navbar";
+@import "./page-header/__navbar/__logo/navbar__logo";
+@import "./page-header/__navbar/__menu/navbar__menu";
+@import "./page-header/__navbar/__account/navbar__account";

@@ -1,0 +1,15 @@
+.page-header__navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding: 1.25rem 0;
+
+  @include media-max-tablet {
+    flex-wrap: wrap;
+  }
+
+  @include media-max-mobile {
+    justify-content: space-between;
+  }
+}
