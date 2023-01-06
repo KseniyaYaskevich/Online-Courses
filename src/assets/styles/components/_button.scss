@@ -49,6 +49,11 @@
         outline: none;
         background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
       }
+
+      &:focus-visible {
+        outline-offset: 1px;
+        outline: -webkit-focus-ring-color auto 1px;
+      }
     }
   }
 }
