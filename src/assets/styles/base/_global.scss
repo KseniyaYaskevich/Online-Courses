@@ -14,7 +14,13 @@ html {
   }
 }
 
-body {
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.page__body {
   display: grid;
   grid-template-rows: min-content auto min-content;
   grid-template-columns: 100%;
@@ -27,13 +33,9 @@ body {
   font-family: $font-family--lato;
   color: $color-gray--800;
 
-  overflow-x: hidden;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
+  &--lock {
+    overflow: hidden;
+  }
 }
 
 .container {
