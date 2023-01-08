@@ -35,7 +35,7 @@ const populateHtmlPlugins = (pagesArray) => {
   return res;
 };
 
-const pages = populateHtmlPlugins(['index', 'courses']);
+const pages = populateHtmlPlugins(['index', 'courses', 'about']);
 
 const jsLoaders = () => {
   const loaders = [{
@@ -52,6 +52,7 @@ const config = {
   entry: {
     index: path.resolve(__dirname, './src/pages/index/index.js'),
     courses: path.resolve(__dirname, './src/pages/courses/courses.js'),
+    about: path.resolve(__dirname, './src/pages/about/about.js'),
   },
   output: {
     filename: './scripts/[name].bundle.js',
