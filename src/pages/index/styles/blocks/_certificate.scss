@@ -1,0 +1,44 @@
+.certificate {
+  padding-top: 7.5rem;
+
+  & .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8.125rem;
+
+    @include media-max-tablet {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.certificate__heading {
+  margin-bottom: 3rem;
+}
+
+.certificate__text {
+  margin-bottom: 2rem;
+}
+
+.certificate__list {
+  display: flex;
+
+  list-style: none;
+}
+
+.certificate__item {
+  &:not(:last-child) {
+    margin-right: 2.5rem;
+  }
+}
+
+.certificate__image {
+  min-width: 705px;
+  min-height: 500px;
+
+  @include media-max-tablet {
+    min-width: auto;
+    min-height: auto;
+    margin: 0 auto;
+  }
+}
