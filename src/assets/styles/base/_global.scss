@@ -49,9 +49,10 @@ img {
 }
 
 .section-heading {
+  color: $color-gray--900;
+
   &__title {
     @include font(2.875rem, 130%, 900);
-    color: $color-gray--900;
   }
 
   &__subtitle {
@@ -59,6 +60,5 @@ img {
 
     @include font(1rem, 150%, 700);
     text-transform: uppercase;
-    color: $color-gray--900;
   }
 }
