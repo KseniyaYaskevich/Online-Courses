@@ -39,11 +39,11 @@
   color: $color-gray--600;
 
   border: 1px solid transparent;
+  border-radius: 4px;
 
   &--active {
     color: $color-primary;
-    border: 1px solid $color-primary;
-    border-radius: 4px;
+    border-color: $color-primary;
   }
 
   @include media-max-tablet {
