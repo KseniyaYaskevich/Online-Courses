@@ -1,0 +1,144 @@
+.events {
+  position: relative;
+
+  padding: 5rem 0;
+  text-align: center;
+  background: rgba(255, 63, 58, 0.2);
+  background: linear-gradient(55deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &::before {
+    bottom: 0.5rem;
+    left: -1rem;
+
+    width: 10rem;
+    height: 7.25rem;
+
+    transform: rotate(90deg);
+
+    background-image: url("~images/index/dots-white.svg");
+  }
+
+  &::after {
+    top: -8rem;
+    right: -4rem;
+
+    width: 17.75rem;
+    height: 17.75rem;
+
+    background-image: url("~images/index/circles-white.svg");
+  }
+}
+
+.events__heading {
+  margin-bottom: 3.75rem;
+}
+
+.events__list {
+  margin-bottom: 3.75rem;
+}
+
+.events__item {
+  &:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.events-card {
+  display: grid;
+  grid-template-columns: min-content auto min-content;
+  align-items: flex-start;
+  gap: 2.5rem;
+
+  padding: 2rem 2.5rem;
+  background-color: $color-white;
+  border-radius: 4px;
+
+  transition: box-shadow .4s ease-out;
+
+  &:hover {
+    box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.16), 0px 30px 24px -10px rgba(255, 63, 58, 0.1), 0px 12px 10px -6px rgba(255, 63, 58, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+  }
+
+  @include media-max-mobile {
+    grid-template-columns: none;
+    grid-template-rows: min-content auto min-content;
+  }
+}
+
+.events-card__data {
+  display: flex;
+  align-items: center;
+
+  min-width: 11.5rem;
+}
+
+.events-card__day {
+  margin-right: 1.25rem;
+
+  @include font(3rem, 130%, 900);
+  color: $color-primary;
+}
+
+.events-card__month,
+.events-card__info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  @include font(1.25rem, 150%, 700);
+  color: $color-gray--900;
+}
+
+.events-card__time,
+.events-card__desc {
+  padding-top: 0.25rem;
+
+  @include font(1rem, 160%, 400);
+  color: $color-gray--700;
+}
+
+.events-card__button {
+  display: inline-block;
+  margin-left: auto;
+
+  text-decoration: none;
+
+  @include media-max-mobile {
+    margin-left: 0;
+  }
+}
+
+.events__more {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  @include media-max-mobile {
+    flex-direction: column;
+  }
+}
+
+.events__text {
+  margin-right: 2.5rem;
+
+  @include font(1.75rem, 150%, 700);
+  color: $color-gray--900;
+
+  @include media-max-mobile {
+    margin-right: 0;
+    margin-bottom: 2.5rem;
+  }
+}
