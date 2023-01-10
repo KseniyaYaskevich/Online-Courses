@@ -27,7 +27,7 @@
 
     transform: rotate(90deg);
 
-    background-image: url("~images/index/dots-white.svg");
+    background-image: url("~images/index/common/dots-white.svg");
   }
 
   &::after {
@@ -37,7 +37,7 @@
     width: 17.75rem;
     height: 17.75rem;
 
-    background-image: url("~images/index/circles-white.svg");
+    background-image: url("~images/index/common/circles-white.svg");
   }
 }
 

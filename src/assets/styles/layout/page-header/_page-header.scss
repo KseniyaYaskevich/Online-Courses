@@ -27,7 +27,7 @@
       width: 6.875rem;
       height: 6.875rem;
 
-      background-image: url("~images/index/header/arrows-white.svg");
+      background-image: url("~images/index/common/arrows-white.svg");
     }
 
     &::after {
@@ -37,7 +37,7 @@
       width: 17.75rem;
       height: 17.75rem;
 
-      background-image: url("~images/index/circles-white.svg");
+      background-image: url("~images/index/common/circles-white.svg");
     }
 
     & .container {
@@ -61,7 +61,7 @@
 
         transform: rotate(-135deg);
 
-        background-image: url("~images/index/header/arrows-white.svg");
+        background-image: url("~images/index/common/arrows-white.svg");
       }
 
       &::after {
@@ -71,7 +71,7 @@
         width: 11.688rem;
         height: 8.563rem;
 
-        background-image: url("~images/index/dots-white.svg");
+        background-image: url("~images/index/common/dots-white.svg");
       }
     }
   }
