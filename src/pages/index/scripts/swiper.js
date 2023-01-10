@@ -1,16 +1,17 @@
-import Swiper, {Navigation} from 'swiper';
+import Swiper, {Navigation,Pagination} from 'swiper';
 import 'swiper/css';
+import 'swiper/css/pagination';
 
-const swiper = new Swiper('.team__swiper', {
+const teamSwiper = new Swiper('.team__swiper', {
   modules: [Navigation],
   direction: 'horizontal',
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
   grabCursor: true,
   navigation: {
-    nextEl: '.team__button--next',
-    prevEl: '.team__button--prev',
+    nextEl: '.team__button-next',
+    prevEl: '.team__button-prev',
   },
   breakpoints: {
     320: {
@@ -25,4 +26,21 @@ const swiper = new Swiper('.team__swiper', {
   },
 });
 
-swiper.update();
+const testimonialsSwiper = new Swiper('.testimonials__swiper', {
+  modules: [Navigation, Pagination],
+  direction: 'horizontal',
+  slidesPerView: 1,
+  loop: true,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.testimonials__button-next',
+    prevEl: '.testimonials__button-prev',
+  },
+  pagination: {
+    el: '.testimonials__pagination',
+    clickable: true,
+  },
+});
+
+teamSwiper.update();
+testimonialsSwiper.update();
