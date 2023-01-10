@@ -13,6 +13,7 @@
     &::before,
     &::after {
       content: "";
+      
       position: absolute;
       z-index: -1;
 
@@ -28,6 +29,7 @@
       height: 6.875rem;
 
       background-image: url("~images/index/common/arrows-white.svg");
+      opacity: 0.3;
     }
 
     &::after {
@@ -38,6 +40,7 @@
       height: 17.75rem;
 
       background-image: url("~images/index/common/circles-white.svg");
+      opacity: 0.2;
     }
 
     & .container {
@@ -45,6 +48,7 @@
       &::before,
       &::after {
         content: "";
+
         position: absolute;
         z-index: -1;
 
@@ -62,6 +66,7 @@
         transform: rotate(-135deg);
 
         background-image: url("~images/index/common/arrows-white.svg");
+        opacity: 0.3;
       }
 
       &::after {
@@ -72,6 +77,7 @@
         height: 8.563rem;
 
         background-image: url("~images/index/common/dots-white.svg");
+        opacity: 0.6;
       }
     }
   }

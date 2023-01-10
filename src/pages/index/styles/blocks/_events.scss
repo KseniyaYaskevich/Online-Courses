@@ -1,16 +1,18 @@
 .events {
   position: relative;
+  overflow: hidden;
 
   padding: 5rem 0;
   text-align: center;
   background: rgba(255, 63, 58, 0.2);
   background: linear-gradient(55deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  overflow: hidden;
+
 
   &::before,
   &::after {
     content: "";
+
     position: absolute;
     z-index: -1;
 
@@ -28,6 +30,7 @@
     transform: rotate(90deg);
 
     background-image: url("~images/index/common/dots-white.svg");
+    opacity: 0.6;
   }
 
   &::after {
@@ -38,6 +41,7 @@
     height: 17.75rem;
 
     background-image: url("~images/index/common/circles-white.svg");
+    opacity: 0.2;
   }
 }
 
