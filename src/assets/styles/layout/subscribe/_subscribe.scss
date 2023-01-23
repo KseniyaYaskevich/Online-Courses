@@ -1,0 +1,95 @@
+.subscribe {
+  position: relative;
+
+  padding: 7.5rem 0 11.25rem;
+  text-align: center;
+  background: rgba(255, 63, 58, 0.2);
+  background: linear-gradient(55deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 22.125rem;
+    height: 15.375rem;
+    background-image: url("~assets/images/common/hands.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    @include media-max-tablet {
+      width: 17.125rem;
+      height: 12.375rem;
+    }
+
+    @include media-max-mobile {
+      width: 9.125rem;
+      height: 6.375rem;
+    }
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
+}
+
+.subscribe__heading {
+  margin-bottom: 3.75rem;
+}
+
+.form-subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.form-subscribe__control {
+  position: relative;
+}
+
+.form-subscribe__input {
+  padding: 0.813rem 1rem;
+
+  @include font(1rem, 160%, 400);
+  color: $color-gray--600;
+
+  background-color: $color-white;
+  border: 1px solid $color-gray--400;
+
+  &:focus,
+  &:valid {
+    outline: none;
+
+    &+.form-subscribe__label span {
+      color: $color-gray--800;
+
+      transform: translateY(-3rem);
+    }
+  }
+}
+
+.form-subscribe__label {
+  position: absolute;
+  top: 0.813rem;
+  left: 1rem;
+
+  @include font(1rem, 160%, 400);
+  color: $color-gray--600;
+
+  pointer-events: none;
+
+  & span {
+    display: inline-block;
+    white-space: pre-wrap;
+
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
