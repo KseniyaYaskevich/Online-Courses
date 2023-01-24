@@ -1,2 +1,3 @@
-import './menu-toggle';
-import './form-label-animate';
+import './toggle-menu';
+import './animate-form-labels';
+import './scroll-to-top';
