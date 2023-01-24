@@ -1,0 +1,51 @@
+.social {
+  max-width: 17.5rem;
+
+  @include media-max-mobile {
+    max-width: 20.5rem;
+  }
+}
+
+.social__logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-bottom: 1.5rem;
+}
+
+.social__icon {
+  margin-right: 0.3rem;
+  fill: $color-white;
+}
+
+.social__text {
+  margin-bottom: 2.375rem;
+
+  @include font(0.75rem, 150%, 400);
+  color: $color-white;
+
+  opacity: 0.6;
+}
+
+.social__list {
+  list-style: none;
+  display: flex;
+}
+
+.social__item {
+  &:not(:last-child) {
+    margin-right: 1.25rem;
+  }
+}
+
+.social__icon {
+  fill: $color-white;
+  opacity: 0.6;
+
+  transition: opacity .3s ease-out;
+
+  &:hover {
+    opacity: 1;
+  }
+}
