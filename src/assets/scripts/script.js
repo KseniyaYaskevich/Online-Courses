@@ -1,3 +1,3 @@
-import './toggle-menu';
-import './animate-form-labels';
-import './scroll-to-top';
+import './base/toggle-menu';
+import './base/animate-form-labels';
+import './base/scroll-to-top';
