@@ -1,0 +1,40 @@
+.courses {
+  padding-top: 3.75rem;
+  margin-bottom: 7.5rem;
+
+  @include media-max-tablet {
+    margin-bottom: 5rem;
+  }
+
+  @include media-max-mobile {
+    margin-bottom: 3rem;
+  }
+}
+
+.courses__heading {
+  text-align: center;
+
+  margin-bottom: 4.375rem;
+}
+
+.courses__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.875rem;
+
+  list-style: none;
+
+  @include media-max-tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media-max-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.courses__link {
+  text-decoration: none;
+}
