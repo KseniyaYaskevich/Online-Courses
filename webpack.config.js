@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin');
 
-// const FileManagerPlugin = require('filemanager-webpack-plugin');
+const FileManagerPlugin = require('filemanager-webpack-plugin');
 
 const isProduction = process.env.NODE_ENV === 'production';
 const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : 'style-loader';
@@ -89,16 +89,16 @@ const config = {
       overrideExtension: true,
       strict: true
     }),
-    // new FileManagerPlugin({
-    //   events: {
-    //     onEnd: {
-    //       copy: [{
-    //         source: './build/assets/images/*.webp',
-    //         destination: './src/assets/images/webp/',
-    //       }, ],
-    //     },
-    //   },
-    // }),
+    new FileManagerPlugin({
+      events: {
+        onEnd: {
+          copy: [{
+            source: './src/assets/json/*.json',
+            destination: './build/assets/json/',
+          }, ],
+        },
+      },
+    }),
   ],
   performance: {
     maxAssetSize: 1000000,
