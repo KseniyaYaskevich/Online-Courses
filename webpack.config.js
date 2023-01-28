@@ -99,6 +99,16 @@ const config = {
         },
       },
     }),
+    new FileManagerPlugin({
+      events: {
+        onEnd: {
+          copy: [{
+            source: './src/assets/images/common/speakers/*.*',
+            destination: './build/assets/images/speakers/',
+          }, ],
+        },
+      },
+    }),
   ],
   performance: {
     maxAssetSize: 1000000,
