@@ -17,6 +17,39 @@
   margin-bottom: 4.375rem;
 }
 
+.courses-sorting {
+  margin-bottom: 3.75rem;
+}
+
+.courses-sorting__button {
+  padding: 0.625rem 1.25rem;
+
+  @include font(1rem, 160%, 700);
+  color: $color-gray--600;
+
+  transition: color .4s ease-out;
+
+  &:hover {
+    color: $color-gray--800;
+  }
+
+  &--active {
+    color: #FF3F3A;
+    outline: 1px solid #FF3F3A;
+
+    pointer-events: none;
+    cursor: default;
+  }
+
+  &:not(:last-child) {
+    margin-right: 0.75rem;
+  }
+}
+
+.courses-sorting__count {
+  padding-left: 0.25rem;
+}
+
 .courses__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
