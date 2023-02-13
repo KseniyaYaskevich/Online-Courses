@@ -11,6 +11,6 @@ export const getItems = (data, number) => {
   return tempArray;
 };
 
-export const render = (container, template) => {
-  container.append(template);
+export const render = (container, template, place = 'beforeend') => {
+  container.insertAdjacentHTML(place, template);
 };
