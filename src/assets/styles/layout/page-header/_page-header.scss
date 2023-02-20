@@ -42,7 +42,7 @@
         width: 6.875rem;
         height: 6.875rem;
 
-        background-image: url("~images/common/decorative/arrows-white.svg");
+        background-image: url("~images/common/decor/arrows-white.svg");
         opacity: 0.3;
       }
 
@@ -53,7 +53,7 @@
         width: 17.75rem;
         height: 17.75rem;
 
-        background-image: url("~images/common/decorative/circles-white.svg");
+        background-image: url("~images/common/decor/circles-white.svg");
         opacity: 0.2;
       }
 
@@ -79,7 +79,7 @@
 
           transform: rotate(-135deg);
 
-          background-image: url("~images/common/decorative/arrows-white.svg");
+          background-image: url("~images/common/decor/arrows-white.svg");
           opacity: 0.3;
         }
 
@@ -90,7 +90,7 @@
           width: 11.688rem;
           height: 8.563rem;
 
-          background-image: url("~images/common/decorative/dots-white.svg");
+          background-image: url("~images/common/decor/dots-white.svg");
           opacity: 0.6;
         }
       }
@@ -116,7 +116,7 @@
         width: 17.75rem;
         height: 17.75rem;
 
-        background-image: url("~images/common/decorative/circles-white.svg");
+        background-image: url("~images/common/decor/circles-white.svg");
         opacity: 0.2;
       }
 
@@ -127,7 +127,7 @@
         width: 11.688rem;
         height: 8.563rem;
 
-        background-image: url("~images/common/decorative/dots-white.svg");
+        background-image: url("~images/common/decor/dots-white.svg");
         opacity: 0.8;
 
         @include media-max-mobile {
@@ -156,7 +156,7 @@
           width: 5.5rem;
           height: 2.938rem;
 
-          background-image: url("~images/common/decorative/bold-arrows-white.svg");
+          background-image: url("~images/common/decor/bold-arrows-white.svg");
           opacity: 0.3;
 
           @include media-max-mobile {
@@ -174,7 +174,7 @@
 
           transform: rotate(-135deg);
 
-          background-image: url("~images/common/decorative/arrows-white.svg");
+          background-image: url("~images/common/decor/arrows-white.svg");
           opacity: 0.3;
 
           @include media-max-mobile {
