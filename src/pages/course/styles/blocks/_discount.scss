@@ -1,0 +1,66 @@
+.discount {
+  margin-bottom: 11.25rem;
+
+  @include media-max-tablet {
+    margin-bottom: 8rem;
+  }
+
+  & .container {
+    padding: 3rem 3.75rem;
+    background: linear-gradient(55deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
+    border-radius: 4px;
+  }
+}
+
+.discount__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+
+  margin-bottom: 2rem;
+}
+
+.discount__title {
+  @include font(2rem, 130%, 900);
+  color: $color-gray--900;
+}
+
+.countdown {
+  display: flex;
+}
+
+.countdown__number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+}
+
+.countdown__time {
+  margin-bottom: 0.25rem;
+
+  @include font(1.25rem, 130%, 700);
+  color: $color-gray--900;
+}
+
+.countdown__text {
+  @include font(0.75rem, 150%, 400);
+  color: $color-gray--900;
+}
+
+.form-discount {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: flex-end;
+  gap: 1.5rem;
+}
+
+.form-discount__control {
+  min-width: 18.188rem;
+}
