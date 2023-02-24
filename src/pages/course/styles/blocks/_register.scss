@@ -1,0 +1,75 @@
+.register {
+  position: relative;
+  overflow: hidden;
+
+  padding-top: 5rem;
+  padding-bottom: 6.25rem;
+  background-color: $color-gray--200;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+
+    top: -8rem;
+    right: -8rem;
+
+    width: 16.125rem;
+    height: 16.125rem;
+
+    background-image: url("~images/common/decor/circles.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    opacity: 0.4;
+  }
+
+  & .container {
+    position: relative;
+    z-index: 1;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 11.563rem;
+    align-items: center;
+
+    @include media-max-tablet {
+      gap: 3rem;
+    }
+
+    @include media-max-mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.register__illustration {
+  min-width: 550px;
+  min-height: 502px;
+
+  transform: scale(-1, 1);
+
+  @include media-max-tablet {
+    min-width: auto;
+    min-height: auto;
+
+    margin: 0 auto;
+  }
+}
+
+.register__heading {
+  margin-bottom: 2.5rem;
+}
+
+.form-register {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-register__control {
+  margin-bottom: 1.5rem;
+
+  &:last-of-type {
+    margin-bottom: 2.5rem;
+  }
+}
