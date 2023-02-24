@@ -1,5 +1,6 @@
 import 'scripts/script';
 import 'scripts/modules/swiper-testimonials';
+import 'scripts/modules/click-on-course-cards';
 
 import {loadData} from './modules/load-data';
 
