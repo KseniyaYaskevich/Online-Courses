@@ -1,4 +1,5 @@
 import {getData} from './get-course-data';
+import {setItem} from '../base/storage';
 
 const cardsContainer = document.querySelector('.courses__list');
 
@@ -10,7 +11,7 @@ const onCardsContainerClick = (evt) => {
     getData().then((data) => {
       data.find((item) => {
         if (item.id === courseId) {
-          localStorage.setItem('course', JSON.stringify(item));
+          setItem('course', item);
         }
       });
     });
