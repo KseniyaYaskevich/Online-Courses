@@ -18,4 +18,11 @@ const onCardsContainerClick = (evt) => {
   }
 };
 
+const addClickListener = (evt) => {
+  if( evt.which === 1 || evt.which === 2 ){
+    onCardsContainerClick(evt);
+  }
+};
+
 cardsContainer.addEventListener('click', onCardsContainerClick);
+cardsContainer.addEventListener('mousedown', addClickListener);
