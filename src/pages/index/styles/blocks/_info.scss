@@ -55,36 +55,8 @@
   }
 }
 
-.info__play-video {
-  display: inline-flex;
-  align-items: center;
-
+.info__play-button {
   margin-bottom: 2.5rem;
-
-  @include font(0.875rem, 150%, 700);
-  color: $color-gray--900;
-
-  &::before {
-    content: "";
-
-    display: inline-block;
-    width: 3.25rem;
-    height: 3.25rem;
-
-    margin-right: 1.063rem;
-
-    background-color: $color-primary;
-    background-image: url("~images/index/info/play-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 55% center;
-
-    border-radius: 50%;
-    transition: box-shadow .3s ease-in;
-  }
-
-  &:hover::before {
-    box-shadow: 0rem 0rem 0rem 1rem rgba(255, 63, 58, 0.2);
-  }
 }
 
 .info__title {
