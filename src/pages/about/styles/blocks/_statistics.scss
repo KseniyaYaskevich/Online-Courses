@@ -1,0 +1,77 @@
+.statistics {
+  margin-bottom: 11.25rem;
+
+  @include media-max-tablet {
+    margin-bottom: 4rem;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.statistics__play-button {
+  flex-basis: 100%;
+  margin-bottom: 2rem;
+}
+
+.statistics__image-wrapper {
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: -2.688rem;
+    left: -5.625rem;
+    z-index: -2;
+
+    width: 8.5rem;
+    height: 6.25rem;
+
+    background-image: url("~images/common/decor/dots-yellow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    opacity: 0.8;
+  }
+}
+
+.statistics__image {
+  min-width: 810px;
+  min-height: 500px;
+
+  @include media-max-tablet {
+    min-width: auto;
+    min-height: auto;
+    margin: 0 auto;
+  }
+}
+
+.statistics__list {
+  @include media-max-tablet {
+    padding-top: 2rem;
+    margin: 0 auto;
+  }
+}
+
+.statistics__item {
+  display: flex;
+  align-items: center;
+
+  @include font(1.125rem, 150%, 700);
+  color: $color-gray--900;
+
+  @include media-max-tablet {
+    justify-content: center;
+  }
+
+  & b {
+    margin-right: 1rem;
+    @include font(3rem, 130%, 900);
+    color: $color-primary;
+  }
+}
