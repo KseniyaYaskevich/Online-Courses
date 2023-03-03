@@ -14,7 +14,7 @@ export const createCourseTemplate = ({
       alt="Photo of speaker ${curator}">
     </picture>
     <div class="course-card__content">
-        <p class="course-card__profession course-card__profession--badge-${type.toLowerCase()}">${specification}</p>
+        <p class="course-direction course-direction--${type.toLowerCase()}">${specification}</p>
         <h3 class="course-card__title">${title}</h3>
         <span class="course-card__price">$${price}</span>
         <span class="course-card__author">| by ${curator}</span>
