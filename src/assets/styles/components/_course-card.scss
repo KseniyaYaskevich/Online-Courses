@@ -48,38 +48,6 @@
   padding: 1.5rem;
 }
 
-.course-card__profession {
-  display: inline-block;
-  padding: 0.063rem 0.5rem;
-  margin-bottom: 1.25rem;
-
-  @include font(0.875rem, 150%, 400);
-  color: $color-white;
-
-  background-color: $color-secondary;
-  border-radius: 0.25rem;
-
-  &--badge-marketing {
-    background-color: $color-mint;
-  }
-
-  &--badge-recruting {
-    background-color: $color-orange;
-  }
-
-  &--badge-management {
-    background-color: $color-blue;
-  }
-
-  &--badge-design {
-    background-color: $color-pink;
-  }
-
-  &--badge-development {
-    background-color: $color-purple;
-  }
-}
-
 .course-card__title {
   margin-bottom: 1.25rem;
 
