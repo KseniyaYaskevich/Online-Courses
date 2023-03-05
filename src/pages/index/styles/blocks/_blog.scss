@@ -1,6 +1,10 @@
 .blog {
   padding-top: 8.313rem;
   margin-bottom: 11.25rem;
+
+  @include media-max-tablet {
+    margin-bottom: 5rem;
+  }
 }
 
 .blog__heading {
