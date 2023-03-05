@@ -1,0 +1,99 @@
+.studying {
+  margin-bottom: 11.25rem;
+
+  @include media-max-tablet {
+    margin-bottom: 5rem;
+  }
+
+  & .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 13.125rem;
+    align-items: flex-end;
+
+    margin-bottom: 11.875rem;
+
+    @include media-max-tablet {
+      grid-template-columns: 1fr;
+      gap: 5rem;
+
+      margin-bottom: 4rem;
+    }
+  }
+}
+
+.studying__heading {
+  margin-bottom: 3.75rem;
+}
+
+.studying__list {
+  max-width: 495px;
+
+  list-style: none;
+}
+
+.studying__item {
+  display: flex;
+
+  &:last-child {
+    .studying__desc {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.studying__path {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-right: 2.5rem;
+}
+
+.studying__circle {
+  width: 0.5rem;
+  height: 0.5rem;
+
+  background-color: $color-primary;
+  border-radius: 50%;
+}
+
+.studying__line {
+  width: 1px;
+  height: calc(95% - (0.25rem * 2));
+
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+
+  background-color: $color-gray--600;
+  opacity: 0.5;
+}
+
+.studying__step {
+  text-transform: uppercase;
+  @include font(0.75rem, 150%, 900);
+  color: $color-gray--700;
+}
+
+.studying__caption {
+  @include font(1.25rem, 150%, 700);
+  color: $color-gray--900;
+}
+
+.studying__desc {
+  margin-bottom: 2rem;
+
+  @include font(1rem, 160%, 400);
+  color: $color-gray--700;
+}
+
+.studying__illustration {
+  min-width: 525px;
+  min-height: 620px;
+
+  @include media-max-tablet {
+    min-width: auto;
+    min-height: auto;
+    margin: 0 auto;
+  }
+}
