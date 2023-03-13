@@ -1,8 +1,8 @@
 export const createCuratorTemplate = (item) => `
 <div class="curator__image-wrapper">
   <picture>
-    <source srcset="./assets/images/curator-${item.id}.webp" type="image/webp">
-    <img class="curator__image" src="./assets/images/speakers/curator-${item.id}.png"
+    <source srcset="/assets/images/curator-${item.id}.webp" type="image/webp">
+    <img class="curator__image" src="/assets/images/curator-${item.id}.png"
     alt="Photo of curator ${item.curator}" width="458" height="600">
   </picture>
 </div>
