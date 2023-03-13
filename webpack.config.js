@@ -205,7 +205,7 @@ const config = {
         ],
       },
       {
-        test: /\.(png|jpe?g|svg|gif|webp)$/i,
+        test: /\.(png|jpe?g|svg|gif)$/i,
         type: 'asset/resource',
         generator: {
           filename: 'assets/images/[name][ext]',
