@@ -1,9 +1,8 @@
 // export const getData = () => fetch('assets/json/courses.json')
 //   .then((response) => response.json());
 
-export const getData = async () => {
-  const data = await fetch('assets/json/courses.json');
-
+export const getData = async (str) => {
+  const data = await fetch(`assets/json/${str}.json`);
   if (data.ok) {
     return data.json();
   } else {
