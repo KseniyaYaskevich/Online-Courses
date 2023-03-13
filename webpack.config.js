@@ -112,16 +112,6 @@ const config = {
         },
       },
     }),
-    new FileManagerPlugin({
-      events: {
-        onEnd: {
-          copy: [{
-            source: './src/assets/images/common/team/*.*',
-            destination: './build/assets/images/team/',
-          }, ],
-        },
-      },
-    }),
   ],
   performance: {
     maxAssetSize: 1000000,
