@@ -86,7 +86,7 @@ const config = {
       config: [{
         test: /\.(jpe?g|png)/,
         options: {
-          quality: 85
+          quality: 75
         }
       }],
       overrideExtension: true,
