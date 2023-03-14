@@ -14,6 +14,10 @@
     box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.16), 0px 30px 24px -10px rgba(255, 63, 58, 0.1), 0px 12px 10px -6px rgba(255, 63, 58, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
   }
 
+  @include media-max-tablet {
+    gap: 1.5rem;
+  }
+
   @include media-max-mobile {
     grid-template-columns: none;
     grid-template-rows: min-content auto min-content;
@@ -21,27 +25,45 @@
 }
 
 .event-card__data {
-  display: flex;
+  display: grid;
+  grid-template-areas:
+    "day month"
+    "day  time";
+  grid-template-rows: repeat(2, max-content);
+  grid-template-columns: repeat(2, max-content);
   align-items: center;
 
-  min-width: 11.5rem;
+  width: max-content;
 }
 
 .event-card__day {
+  grid-area: day;
   margin-right: 1.25rem;
 
   @include font(3rem, 130%, 900);
   color: $color-primary;
 }
 
+.event-card__month {
+  grid-area: month;
+}
+
+.event-card__time {
+  grid-area: time;
+  text-align: left;
+}
+
 .event-card__month,
 .event-card__info {
-  display: flex;
-  flex-direction: column;
   text-align: left;
 
   @include font(1.25rem, 150%, 700);
   color: $color-gray--900;
+}
+
+.event-card__info {
+  display: flex;
+  flex-direction: column;
 }
 
 .event-card__time,
@@ -56,6 +78,7 @@
   display: inline-block;
   margin-left: auto;
 
+  text-align: center;
   text-decoration: none;
 
   @include media-max-mobile {
