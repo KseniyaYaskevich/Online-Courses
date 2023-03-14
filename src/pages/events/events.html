@@ -59,6 +59,39 @@
     </div>
   </header>
   <main class="page-main">
+    <section class="events">
+      <div class="container">
+        <div class="events__heading section-heading">
+          <p class="events__subtitle section-heading__subtitle">Our events</p>
+          <h2 class="events__title section-heading__title">Lectures, workshops & master-classes</h2>
+        </div>
+        <div class="events__toolbar toolbar">
+          <div class="toolbar__view view">
+            <button class="view__list" id="view-list">list</button>
+            <button class="view__grid" id="view-grid">grid</button>
+          </div>
+        </div>
+        <div class="events__swiper events-swiper swiper">
+          <ul class="events__list swiper-wrapper">
+            <!-- events items -->
+          </ul>
+          <div class="events-swiper__controls">
+            <button class="button events-swiper__button events-swiper__button--prev">
+              <svg class="swiper__icon" width="18" height="11">
+                <use xlink:href="~assets/icons/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+            <div class="events-swiper__pagination">
+            </div>
+            <button class="button events-swiper__button events-swiper__button--next">
+              <svg class="swiper__icon" width="18" height="11">
+                <use xlink:href="~assets/icons/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="page-footer">
     <div class="container">
