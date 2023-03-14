@@ -7,3 +7,5 @@ import {eventCardsHandler} from 'scripts/modules/event-cards-handler';
 
 const CARDS_NUMBER = 30;
 
+loadData(CARDS_NUMBER);
+eventCardsHandler();
