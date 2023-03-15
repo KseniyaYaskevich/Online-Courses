@@ -1,8 +1,8 @@
 import 'scripts/script';
 import 'scripts/modules/swiper-testimonials';
+import 'scripts/modules/spollers';
 
 import './modules/countdown';
-import './modules/spollers';
 import './modules/swiper-courses';
 
 import {loadData} from './modules/load-data';
