@@ -1,0 +1,158 @@
+.curator {
+  margin-bottom: 11.25rem;
+
+  @include media-max-tablet {
+    margin-bottom: 8rem;
+  }
+
+  & .container {
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: 1fr 1fr;
+    gap: 8.438rem;
+
+    @include media-max-tablet {
+      gap: 2rem;
+    }
+
+    @include media-max-mobile {
+      grid-template-columns: 1fr;
+      gap: 5rem;
+    }
+  }
+}
+
+.curator__image-wrapper {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $color-secondary;
+
+  @include media-max-mobile {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: -8.938rem;
+    top: -5.375rem;
+    z-index: -2;
+
+    width: 15.125rem;
+    height: 15.125rem;
+
+    background-image: url("~images/common/decor/circles-yellow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.12;
+
+    @include media-max-mobile {
+      left: -5rem;
+      top: -3rem;
+
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+}
+
+.curator__image {
+  margin-top: -1.25rem;
+
+
+}
+
+.curator__heading {
+  margin-bottom: 2rem;
+}
+
+.curator__title {
+  margin-bottom: 1rem;
+}
+
+.curator__profession {
+  @include font(1.25rem, 150%, 400);
+  color: $color-gray--700;
+}
+
+.statistics-curator {
+  margin-bottom: 2rem;
+
+  list-style: none;
+}
+
+.statistics-curator__item {
+  display: flex;
+  align-items: center;
+  @include font(1rem, 160%, 700);
+  color: $color-gray--800;
+
+  &:not(:last-child) {
+    margin-bottom: 0.563rem;
+  }
+}
+
+.statistics-curator__icon {
+  margin-right: 0.5rem;
+  fill: $color-primary;
+}
+
+.curator-logo__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2.5rem;
+
+  list-style: none;
+
+  @include media-max-mobile {
+    gap: 1rem;
+  }
+}
+
+.curator-logo__img {
+  filter: invert(48%) sepia(7%) saturate(260%) hue-rotate(188deg) brightness(97%) contrast(96%);
+  opacity: 0.7;
+}
+
+.curator__desc {
+  margin-bottom: 2.5rem;
+
+  @include font(1rem, 160%, 400);
+  color: $color-gray--800;
+}
+
+.socials-curator {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+}
+
+.socials-curator__item {
+
+  &:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+}
+
+.socials-curator__link {
+  display: block;
+
+  &:hover {
+    .socials-curator__icon {
+      fill: $color-primary;
+    }
+  }
+}
+
+.socials-curator__icon {
+  fill: $color-gray--700;
+  transition: fill .4s ease-out;
+}
