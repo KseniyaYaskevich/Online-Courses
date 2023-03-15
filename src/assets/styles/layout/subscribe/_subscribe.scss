@@ -53,10 +53,17 @@
 
 .form-subscribe__control {
   position: relative;
+
+  width: 50%;
+
+  @include media-max-mobile {
+    width: auto;
+  }
 }
 
 .form-subscribe__input {
   padding: 0.813rem 1rem;
+  width: 100%;
 
   @include font(1rem, 160%, 400);
   color: $color-gray--600;
