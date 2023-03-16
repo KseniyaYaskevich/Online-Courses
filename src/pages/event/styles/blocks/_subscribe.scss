@@ -1,0 +1,110 @@
+.subscribe {
+  position: relative;
+
+  & .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 7.125rem;
+
+    padding: 3.75rem 6.563rem;
+
+    background: rgba(255, 63, 58, 0.2);
+    background: linear-gradient(55deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
+
+    @include media-max-tablet {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+
+      padding: 4rem;
+    }
+
+    @include media-max-mobile {
+      padding: 1.25rem;
+    }
+  }
+}
+
+.subscribe__illustration {
+  min-width: 308px;
+  min-height: 234px;
+
+  @include media-max-tablet {
+    min-width: auto;
+    min-height: auto;
+    margin: 0 auto;
+  }
+}
+
+.subscribe__heading {
+  margin-bottom: 3rem;
+}
+
+.subscribe__title {
+  font-size: 2rem;
+}
+
+.form-subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.form-subscribe__input-control {
+  position: relative;
+
+  width: 70%;
+}
+
+.form-subscribe__input {
+  padding: 0.813rem 1rem;
+  width: 100%;
+
+  @include font(1rem, 160%, 400);
+  color: $color-gray--600;
+
+  background-color: $color-white;
+  border: 1px solid $color-gray--400;
+
+  &:focus,
+  &:valid {
+    outline: none;
+
+    &+.form-subscribe__label span {
+      color: $color-gray--800;
+
+      transform: translateY(-3rem);
+    }
+  }
+}
+
+.form-subscribe__label {
+  position: absolute;
+  top: 0.813rem;
+  left: 1rem;
+
+  @include font(1rem, 160%, 400);
+  color: $color-gray--600;
+
+  pointer-events: none;
+
+  & span {
+    display: inline-block;
+    white-space: pre-wrap;
+
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+.form-subscribe__checkbox-control {
+  flex-basis: 100%;
+}
+
+.form-subscribe__checkbox {
+  margin-right: 1rem;
+}
+
+.form-subscribe__checkbox-label {
+  @include font(1rem, 160%, 400);
+  color: $color-gray--800;
+}
