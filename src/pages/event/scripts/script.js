@@ -9,6 +9,9 @@ import {getItem} from 'scripts/base/storage';
 
 const CARDS_NUMBER = 6;
 
+loadData(CARDS_NUMBER);
+eventCardsHandler();
+
 window.addEventListener('load', () => {
   createEventPageTemplate(getItem('event'));
 });
