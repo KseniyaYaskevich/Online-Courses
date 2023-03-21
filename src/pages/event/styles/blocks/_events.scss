@@ -1,0 +1,107 @@
+.events {
+  padding-top: 6.25rem;
+  padding-bottom: 11.25rem;
+
+  background-color: $color-gray--200;
+
+  @include media-max-tablet {
+    padding-bottom: 8rem;
+  }
+}
+
+.events__heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 3.75rem;
+}
+
+.events__subtitle {
+  flex-basis: 100%;
+}
+
+.events__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.events__swiper {
+  max-width: 100%;
+
+  padding-bottom: 5rem;
+}
+
+.events__list {
+  list-style: none;
+}
+
+.events__item {
+  height: auto;
+}
+
+.event-card {
+  grid-template-columns: none;
+  grid-template-rows: min-content auto min-content;
+  gap: 1.25rem;
+
+  border: 1px solid $color-gray--300;
+  border-radius: 4px;
+
+  &:hover {
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  }
+}
+
+.event-card__data {
+  display: grid;
+  grid-template-areas:
+    "day month"
+    "time time";
+  grid-template-rows: repeat(2, max-content);
+  grid-template-columns: repeat(2, max-content);
+  align-items: baseline;
+}
+
+.event-card__day {
+  margin-right: 0.5rem;
+}
+
+.event-card__day,
+.event-card__month {
+  @include font(1.75rem, 150%, 700);
+  color: $color-primary;
+}
+
+.event-card__button {
+  margin-left: 0;
+}
+
+.events__more {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  @include media-max-mobile {
+    flex-direction: column;
+  }
+}
+
+.events__text {
+  margin-right: 2.5rem;
+
+  @include font(1.75rem, 150%, 700);
+  color: $color-gray--900;
+
+  @include media-max-mobile {
+    margin-right: 0;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.events__button {
+  display: inline-block;
+  text-decoration: none;
+}
