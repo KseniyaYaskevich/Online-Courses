@@ -5,7 +5,7 @@ export const getItems = (data, number) => {
   const tempArray = [];
 
   for (let i = 0; i < number; i++) {
-    const randomIndex = Math.floor(getRandomNumber(1, 9));
+    const randomIndex = Math.floor(getRandomNumber(0, data.length));
     tempArray.push(newData[randomIndex]);
   }
   return tempArray;
