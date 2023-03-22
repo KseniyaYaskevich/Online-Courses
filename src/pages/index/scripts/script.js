@@ -8,7 +8,10 @@ import {loadData} from './modules/load-data';
 import {courseCardsHandler} from 'scripts/modules/course-cards-handler';
 import {eventCardsHandler} from 'scripts/modules/event-cards-handler';
 
-const CARDS_NUMBER = 6;
+const COURSE_CARDS_NUMBER = 6;
+const EVENT_CARDS_NUMBER = 3;
+const BLOG_CARDS_NUMBER = 3;
+
 
 loadData(CARDS_NUMBER);
 courseCardsHandler();
