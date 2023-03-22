@@ -3,6 +3,7 @@ import {getItems} from 'scripts/modules/utils';
 import {render} from 'scripts/modules/utils';
 import {createCourseTemplate} from 'scripts/view/course-template';
 import {createEventTemplate} from 'scripts/view/event-template';
+import {createBlogItemTemplate} from 'scripts/view/blog-item-template';
 
 const cardsWrapper = document.querySelector('.courses__list');
 
