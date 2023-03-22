@@ -10,7 +10,7 @@ export const loadData = (cardsNumber) => {
     const cards = getItems(data, cardsNumber);
 
     cards.forEach((item) => {
-      render(cardsWrapper, createEventTemplate(item));
+      render(cardsWrapper, createEventTemplate(item, 'swiper-slide'));
     });
   });
 };
