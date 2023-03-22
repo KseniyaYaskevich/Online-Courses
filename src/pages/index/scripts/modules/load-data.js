@@ -5,14 +5,22 @@ import {createCourseTemplate} from 'scripts/view/course-template';
 import {createEventTemplate} from 'scripts/view/event-template';
 import {createBlogItemTemplate} from 'scripts/view/blog-item-template';
 
-const cardsWrapper = document.querySelector('.courses__list');
+export const loadData = (cardsNumber, str) => {
+  const cardsWrapper = document.querySelector(`.${str}__list`);
 
-export const loadData = (cardsNumber) => {
-  getData('courses').then((data) => {
+  getData(`${str}`).then((data) => {
     const cards = getItems(data, cardsNumber);
 
     cards.forEach((item) => {
-      render(cardsWrapper, createCourseTemplate(item, 'horizontal'));
+      if (str === 'courses') {
+        render(cardsWrapper, createCourseTemplate(item, 'horizontal'));
+      }
+      if (str === 'events') {
+        render(cardsWrapper, createEventTemplate(item));
+      }
+      if (str === 'blog') {
+        render(cardsWrapper, createBlogItemTemplate(item));
+      }
     });
   });
 };
