@@ -12,6 +12,9 @@ const COURSE_CARDS_NUMBER = 6;
 const EVENT_CARDS_NUMBER = 3;
 const BLOG_CARDS_NUMBER = 3;
 
+loadData(COURSE_CARDS_NUMBER, 'courses');
+loadData(EVENT_CARDS_NUMBER, 'events');
+loadData(BLOG_CARDS_NUMBER, 'blog');
 
-loadData(CARDS_NUMBER);
 courseCardsHandler();
+eventCardsHandler();
