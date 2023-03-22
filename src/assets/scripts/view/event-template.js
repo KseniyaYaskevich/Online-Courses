@@ -5,8 +5,8 @@ export const createEventTemplate = ({
   time,
   title,
   type
-}) => `
-<li class="events__item event-card swiper-slide" data-id="${id}">
+}, swiperSlide = '') => `
+<li class="events__item event-card${swiperSlide ? ` ${swiperSlide}` : ''}" data-id="${id}">
   <div class="event-card__data">
     <p class="event-card__day">${day}</p>
     <p class="event-card__month">${month}</p>
