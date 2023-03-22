@@ -14,7 +14,7 @@ export const sortCards = (array, cardsPerStep) => {
       if (type === 'all') {
         count = array.length;
         cardsByType.push(card);
-      } else if (card.type.toLowerCase() === type) {
+      } else if (type === card.type.toLowerCase()) {
         count++;
         cardsByType.push(card);
       }

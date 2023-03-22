@@ -7,7 +7,7 @@ export const createBlogItemTemplate = ({
   duration,
   title,
   description
-},swiperSlide = '') => `
+}, swiperSlide = '') => `
 <li class="blog__item blog-card${swiperSlide ? ` ${swiperSlide}` : ''}" data-id="${id}">
   <div class="blog-card__img-wrapper">
     <img class="blog-card__img" src="assets/images/blog/blog-${id}.jpg"
