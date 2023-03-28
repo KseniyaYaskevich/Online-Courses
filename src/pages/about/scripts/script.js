@@ -6,3 +6,5 @@ import {blogCardsHandler} from 'scripts/modules/blog-cards-handler';
 
 const CARDS_NUMBER = 3;
 
+loadData(CARDS_NUMBER);
+blogCardsHandler();

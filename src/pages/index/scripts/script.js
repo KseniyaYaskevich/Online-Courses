@@ -19,3 +19,4 @@ loadData(BLOG_CARDS_NUMBER, 'blog');
 
 courseCardsHandler();
 eventCardsHandler();
+blogCardsHandler();

@@ -8,3 +8,6 @@ import {loadData} from './modules/load-data';
 
 const CARDS_NUMBER = 8;
 
+loadData(CARDS_NUMBER);
+blogCardsHandler();
+
