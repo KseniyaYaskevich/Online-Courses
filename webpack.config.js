@@ -35,7 +35,7 @@ const populateHtmlPlugins = (pagesArray) => {
   return res;
 };
 
-const pages = populateHtmlPlugins(['index', 'courses', 'course', 'about', 'events', 'event', 'blog']);
+const pages = populateHtmlPlugins(['index', 'courses', 'course', 'about', 'events', 'event', 'blog', 'post']);
 
 const jsLoaders = () => {
   const loaders = [{
@@ -57,6 +57,7 @@ const config = {
     events: path.resolve(__dirname, './src/pages/events/events.js'),
     event: path.resolve(__dirname, './src/pages/event/event.js'),
     blog: path.resolve(__dirname, './src/pages/blog/blog.js'),
+    post: path.resolve(__dirname, './src/pages/post/post.js'),
   },
   output: {
     filename: './scripts/[name].bundle.js',
