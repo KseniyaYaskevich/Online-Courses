@@ -11,3 +11,6 @@ const CARDS_NUMBER = 8;
 loadData(CARDS_NUMBER);
 blogCardsHandler();
 
+window.addEventListener('load', () => {
+  createPostPageTemplate(getItem('post'));
+});
