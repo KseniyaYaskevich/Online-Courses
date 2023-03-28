@@ -6,3 +6,5 @@ import {blogCardsHandler} from 'scripts/modules/blog-cards-handler';
 import {getItem} from 'scripts/base/storage';
 import {loadData} from './modules/load-data';
 
+const CARDS_NUMBER = 8;
+
