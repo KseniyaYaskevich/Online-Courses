@@ -1,0 +1,166 @@
+.article__inner {
+  display: flex;
+  align-items: center;
+
+  &--space-between {
+    justify-content: space-between;
+  }
+}
+
+.article__type {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+
+  margin-right: 1.5rem;
+
+  @include font(1rem, 160%, 400);
+  color: $color-gray--800;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -0.75rem;
+    height: 100%;
+    width: 1px;
+    background-color: $color-gray--800;
+  }
+
+  & svg {
+    margin-right: 0.625rem;
+
+    fill: currentColor;
+  }
+}
+
+.article__category {
+  @include font(1rem, 160%, 700);
+  color: $color-primary;
+}
+
+.article__title {
+  padding-top: 0.75rem;
+  margin-bottom: 1.625rem;
+}
+
+.details__item {
+  display: inline-flex;
+  align-items: center;
+
+  @include font(1rem, 160%, 400);
+  color: $color-gray--700;
+
+  &:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+
+  & svg {
+    margin-right: 0.5rem;
+    fill: currentColor;
+  }
+}
+
+.sharing {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sharing__title {
+  margin-right: 0.75rem;
+
+  @include font(1rem, 160%, 700);
+  color: $color-gray--900;
+}
+
+.sharing__list {
+  display: flex;
+  list-style: none;
+}
+
+.sharing__item {
+  &:not(:last-child) {
+    margin-right: 0.75rem;
+  }
+}
+
+.sharing__link {
+  text-decoration: none;
+  color: $color-gray--700;
+
+  &:hover {
+    .sharing__icon {
+      fill: $color-primary;
+    }
+  }
+}
+
+.sharing__icon {
+  fill: currentColor;
+  transition: fill .4s ease-out;
+}
+
+.article__img {
+  padding-top: 2.5rem;
+  margin-bottom: 3.75rem;
+
+  width: 100%;
+}
+
+.article__subtitle {
+  margin-bottom: 1.5rem;
+
+  @include font(1.25rem, 150%, 700);
+  color: $color-gray--900;
+}
+
+.article__text {
+  margin-bottom: 1.25rem;
+
+  @include font(1rem, 160%, 400);
+  color: $color-gray--800;
+
+  &:nth-of-type(2) {
+    margin-bottom: 3rem;
+  }
+
+  &:last-of-type {
+    margin-bottom: 3.75rem;
+  }
+}
+
+.article__quotation {
+  margin-bottom: 3rem;
+}
+
+.quotation {
+  display: flex;
+  align-items: flex-start;
+}
+
+.quotation__braces {
+  margin-right: 1.875rem;
+}
+
+.quotation__text {
+  @include font(1.25rem, 150%, 700);
+  color: $color-gray--900;
+}
+
+.article__content {
+  margin-bottom: 1.5rem;
+}
+
+.content__title {
+  margin-bottom: 1.5rem;
+
+  color: $color-gray--800;
+}
+
+.content__item {
+  &:not(:last-child) {
+    margin-bottom: 0.25rem;
+  }
+}
