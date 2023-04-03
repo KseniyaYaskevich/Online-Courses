@@ -33,7 +33,7 @@ export const createBlogItemTemplate = ({
         <svg width="15" height="15">
           <use xlink:href="assets/images/sprite.svg#clock"></use>
         </svg>
-        <time datetime="PTH0M{duration}S">${duration} min</time>
+        <time datetime="PTH0M${duration}S">${duration} min</time>
       </li>` : ''}
     </ul>
     <h3 class="blog-card__title">${title}</h3>
