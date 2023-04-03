@@ -5,7 +5,17 @@
     "date": "September 4, 2020",
     "duration": "36",
     "title": "What is traffic arbitrage and does it really make money?",
-    "description": "Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida..."
+    "description": "Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...",
+    "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad veniam sapiente id neque commodi repudiandae quas modi ea aspernatur nulla a maiores illum eligendi, molestiae, perferendis quasi quam ducimus sequi delectus molestias voluptates ex quia dolore nam!Illo suscipit natus eveniet molestias, accusantium nulla quidem amet, a odio quis earum?",
+    "curator": "Jerome Bell",
+    "profession": "Senior UX designer in IT Product Company",
+    "tags": [
+      "marketing",
+      "podcast",
+      "learning",
+      "coding",
+      "self-development"
+    ]
   },
   {
     "id": "2",
@@ -13,7 +23,17 @@
     "category": "Development",
     "date": "September 1, 2020",
     "title": "How to choose the first programming language for a beginner",
-    "description": "Turpis sed at magna laoreet gravida consequat tortor placerat. Gravida vitae aliquet enim egestas dui..."
+    "description": "Turpis sed at magna laoreet gravida consequat tortor placerat. Gravida vitae aliquet enim egestas dui...",
+    "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad veniam sapiente id neque commodi repudiandae quas modi ea aspernatur nulla a maiores illum eligendi, molestiae, perferendis quasi quam ducimus sequi delectus molestias voluptates ex quia dolore nam!Illo suscipit natus eveniet molestias, accusantium nulla quidem amet, a odio quis earum?",
+    "curator": "Marvin McKinney",
+    "profession": "Senior UX designer in IT Product Company",
+    "tags": [
+      "article",
+      "development",
+      "learning",
+      "coding",
+      "self-development"
+    ]
   },
   {
     "id": "3",
@@ -22,7 +42,17 @@
     "date": "August 8, 2020",
     "duration": "40",
     "title": "Should you choose a creative profession if you are attracted to creativity?",
-    "description": "Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices..."
+    "description": "Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...",
+    "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad veniam sapiente id neque commodi repudiandae quas modi ea aspernatur nulla a maiores illum eligendi, molestiae, perferendis quasi quam ducimus sequi delectus molestias voluptates ex quia dolore nam!Illo suscipit natus eveniet molestias, accusantium nulla quidem amet, a odio quis earum?",
+    "curator": "Leslie Alexander Li",
+    "profession": "Senior UX designer in IT Product Company",
+    "tags": [
+      "video",
+      "design",
+      "learning",
+      "coding",
+      "self-development"
+    ]
   },
   {
     "id": "4",
@@ -30,7 +60,18 @@
     "category": "HR & Recruting",
     "date": "August 3, 2020",
     "title": "HR statistics: job search,  interviews, hiring and recruiting",
-    "description": "Massa, lectus nibh consectetur aliquet nunc risus aenean. Leo hac netus bibendum diam adipiscing aenean nisl. Molestie nullam ante mattis ac sit vitae pellentesque mi etiam. Morbi commodo tempor, massa vivamus. A molestie id semper fermentum pretium..."
+    "description": "Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...",
+    "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad veniam sapiente id neque commodi repudiandae quas modi ea aspernatur nulla a maiores illum eligendi, molestiae, perferendis quasi quam ducimus sequi delectus molestias voluptates ex quia dolore nam!Illo suscipit natus eveniet molestias, accusantium nulla quidem amet, a odio quis earum?",
+    "curator": "Kristin Watson",
+    "profession": "Senior UX designer in IT Product Company",
+    "tags": [
+      "article",
+      "recruting",
+      "HR",
+      "learning",
+      "coding",
+      "self-development"
+    ]
   },
   {
     "id": "5",
@@ -39,7 +80,17 @@
     "date": "August 2, 2020",
     "duration": "43",
     "title": "What to do and who to talk to if you want to get feedback on the product",
-    "description": "Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna sagittis faucibus. Curabitur nisl tincidunt eros venenatis..."
+    "description": "Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...",
+    "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad veniam sapiente id neque commodi repudiandae quas modi ea aspernatur nulla a maiores illum eligendi, molestiae, perferendis quasi quam ducimus sequi delectus molestias voluptates ex quia dolore nam!Illo suscipit natus eveniet molestias, accusantium nulla quidem amet, a odio quis earum?",
+    "curator": "Guy Hawkins",
+    "profession": "Senior UX designer in IT Product Company",
+    "tags": [
+      "management",
+      "video",
+      "learning",
+      "coding",
+      "self-development"
+    ]
   },
   {
     "id": "6",
@@ -48,7 +99,17 @@
     "date": "July 28, 2020",
     "duration": "36",
     "title": "What are color profiles and how they work in graphic design",
-    "description": "Aliquam vulputate hendrerit quam sollicitudin urna enim viverra gravida. Consectetur urna arcu eleifend..."
+    "description": "Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...",
+    "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad veniam sapiente id neque commodi repudiandae quas modi ea aspernatur nulla a maiores illum eligendi, molestiae, perferendis quasi quam ducimus sequi delectus molestias voluptates ex quia dolore nam!Illo suscipit natus eveniet molestias, accusantium nulla quidem amet, a odio quis earum?",
+    "curator": "Dianne Russell",
+    "profession": "Senior UX designer in IT Product Company",
+    "tags": [
+      "design",
+      "podcast",
+      "learning",
+      "coding",
+      "self-development"
+    ]
   },
   {
     "id": "7",
@@ -57,7 +118,17 @@
     "date": "July 15, 2020",
     "duration": "45",
     "title": "Startup: how to build a team that will live longer than a year",
-    "description": "Nisi, massa ut sit faucibus et diam. Faucibus at malesuada at justo scelerisque in nisi, urna..."
+    "description": "Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...",
+    "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad veniam sapiente id neque commodi repudiandae quas modi ea aspernatur nulla a maiores illum eligendi, molestiae, perferendis quasi quam ducimus sequi delectus molestias voluptates ex quia dolore nam!Illo suscipit natus eveniet molestias, accusantium nulla quidem amet, a odio quis earum?",
+    "curator": "Brooklyn Simmons",
+    "profession": "Senior UX designer in IT Product Company",
+    "tags": [
+      "management",
+      "video",
+      "learning",
+      "coding",
+      "self-development"
+    ]
   },
   {
     "id": "8",
@@ -65,6 +136,16 @@
     "category": "Marketing",
     "date": "July 9, 2020",
     "title": "How to get customers to love your business from the start",
-    "description": "Malesuada in augue mi feugiat morbi a aliquet enim. Elementum lacus, pellentesque etiam arcu tristique ac..."
+    "description": "Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...",
+    "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad veniam sapiente id neque commodi repudiandae quas modi ea aspernatur nulla a maiores illum eligendi, molestiae, perferendis quasi quam ducimus sequi delectus molestias voluptates ex quia dolore nam!Illo suscipit natus eveniet molestias, accusantium nulla quidem amet, a odio quis earum?",
+    "curator": "Kathryn Murphy",
+    "profession": "Senior UX designer in IT Product Company",
+    "tags": [
+      "marketing",
+      "article",
+      "learning",
+      "coding",
+      "self-development"
+    ]
   }
 ]
