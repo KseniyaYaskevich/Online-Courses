@@ -1,0 +1,54 @@
+.author__wrapper {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.author__image-wrapper {
+  display: flex;
+  align-items: flex-end;
+
+  min-width: 6.25rem;
+  height: 6.25rem;
+
+  text-align: center;
+  background-color: $color-secondary;
+}
+
+.author__image {
+  max-width: 70%;
+}
+
+.author__subtitle {
+  margin-bottom: 0.25rem;
+
+  @include font(1.25rem, 150%, 700);
+  color: $color-gray--800;
+}
+
+.author__profession {
+  margin-bottom: 1.25rem;
+
+  @include font(0.875rem, 150%, 400);
+  color: $color-gray--700;
+}
+
+.socials-author {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.socials-author__item {
+  &:not(:last-child) {
+    margin-right: 0.75rem;
+  }
+}
+
+.socials-author__icon {
+  fill: $color-gray--700;
+  transition: fill .4s ease-out;
+
+  &:hover {
+    fill: $color-primary;
+  }
+}
