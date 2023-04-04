@@ -10,7 +10,8 @@
   color: $color-gray--800;
 }
 
-.form__input {
+.form__input,
+.form__textarea {
   padding: 0.66rem 1rem;
 
   @include font(0.875rem, 150%, 400);
