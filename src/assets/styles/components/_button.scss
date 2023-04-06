@@ -1,6 +1,7 @@
 .button {
   @include reset-btn;
-
+  
+  font-family: $font-family--lato;
   letter-spacing: 0.5px;
   white-space: nowrap;
 
