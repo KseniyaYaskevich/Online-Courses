@@ -11,7 +11,7 @@ export const createBlogItemTemplate = ({
 <li class="blog__item blog-card${swiperSlide ? ` ${swiperSlide}` : ''}" data-id="${id}">
   <div class="blog-card__img-wrapper">
     <img class="blog-card__img" src="assets/images/blog/blog-${id}.jpg"
-      alt="Face made up of different elements" width="390" height="300">
+      alt="Face made up of different elements" width="390" height="295">
     <span class="blog-card__type">
       <svg width="15" height="15">
         <use xlink:href="assets/images/sprite.svg#${type.toLowerCase()}"></use>
