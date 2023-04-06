@@ -16,7 +16,7 @@
 .menu {
   &.is-opened {
     .menu__toggle {
-      & span {
+      span {
         opacity: 0;
         transform: scale(0);
       }
@@ -48,7 +48,11 @@
   width: 4rem;
   height: 2rem;
 
-  & span,
+  @include media-max-mobile {
+    display: block;
+  }
+
+  span,
   &::before,
   &::after {
     content: "";
@@ -64,7 +68,7 @@
     transition: all .4s ease-out;
   }
 
-  & span {
+  span {
     top: 50%;
     opacity: 1;
     transform: scale(1);
@@ -77,10 +81,6 @@
   &::after {
     top: 100%;
   }
-
-  @include media-max-mobile {
-    display: block;
-  }
 }
 
 .menu__list {
@@ -91,7 +91,6 @@
 
   @include media-max-mobile {
     position: fixed;
-
     top: 9rem;
     right: -110%;
     z-index: 10;
@@ -137,13 +136,6 @@
 
   transition: color .3s ease-out;
 
-  &--active {
-    color: $color-primary;
-
-    pointer-events: none;
-    cursor: default;
-  }
-
   &:hover {
     color: $color-primary;
   }
@@ -152,5 +144,12 @@
     display: block;
     padding: 3rem 0;
     font-size: 2rem;
+  }
+
+  &--active {
+    color: $color-primary;
+
+    pointer-events: none;
+    cursor: default;
   }
 }
