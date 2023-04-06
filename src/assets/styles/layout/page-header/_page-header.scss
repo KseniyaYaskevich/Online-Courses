@@ -1,4 +1,5 @@
 .page-header {
+  z-index: 10;
 
   &--background-gradient {
     background: rgba(255, 63, 58, 0.2);
@@ -16,7 +17,6 @@
 .page-header__decoration {
   position: relative;
   overflow: hidden;
-  z-index: 1;
 
   &--page {
 
