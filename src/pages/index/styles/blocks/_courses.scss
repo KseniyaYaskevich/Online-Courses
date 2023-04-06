@@ -1,5 +1,5 @@
 .courses {
-  margin-bottom: 11.25rem;
+  margin-bottom: 12rem;
 
   @include media-max-tablet {
     margin-bottom: 7rem;
@@ -16,7 +16,7 @@
   justify-content: space-between;
   align-items: center;
 
-  margin-bottom: 3.688rem;
+  margin-bottom: 3.5rem;
 }
 
 .courses__subtitle {
@@ -30,7 +30,7 @@
 .courses__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.875rem;
+  gap: 1.7rem;
 
   list-style: none;
 

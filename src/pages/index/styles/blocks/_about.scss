@@ -3,7 +3,7 @@
   overflow: hidden;
 
   padding-top: 11.25rem;
-  margin-bottom: 10.25rem;
+  margin-bottom: 12.25rem;
 
   &::before,
   &::after {
@@ -17,7 +17,7 @@
   }
 
   &::before {
-    top: 15rem;
+    top: 18rem;
     left: -5.6rem;
 
     width: 11.313rem;
@@ -30,11 +30,11 @@
   }
 
   &::after {
-    right: -9rem;
-    bottom: 0;
+    right: -10.5rem;
+    bottom: 1rem;
 
-    width: 17.938rem;
-    height: 17.938rem;
+    width: 18rem;
+    height: 18rem;
 
     background-image: url("~images/common/decor/circles-yellow.svg");
     opacity: 0.12;
@@ -86,6 +86,12 @@
 
 .about__list {
   margin-bottom: 3rem;
+}
+
+.about__item {
+  &:not(:last-child) {
+    margin-bottom: 0.8rem;
+  }
 }
 
 .about__link {

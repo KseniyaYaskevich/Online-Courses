@@ -2,8 +2,8 @@
   position: relative;
   overflow: hidden;
 
-  padding-top: 11.25rem;
-  padding-bottom: 6.25rem;
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
 
   text-align: center;
   background-color: $color-gray--200;
@@ -20,18 +20,18 @@
   }
 
   &::before {
-    top: 7rem;
+    top: 6rem;
     left: 5rem;
 
-    width: 9.063rem;
-    height: 9.063rem;
+    width: 9rem;
+    height: 9rem;
 
     background-image: url("~images/common/decor/circles-white.svg");
     opacity: 0.6;
   }
 
   &::after {
-    bottom: -8rem;
+    bottom: -5.5rem;
     right: -8rem;
 
     width: 16.125rem;
@@ -90,7 +90,7 @@
 .testimonials__wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 3.75rem;
+  margin-bottom: 2.5rem;
 
   @include media-max-mobile {
     flex-wrap: wrap;

@@ -13,7 +13,7 @@
 }
 
 .benefits__title {
-  margin-bottom: 3.75rem;
+  margin-bottom: 3.5rem;
 }
 
 .tabs-nav {
@@ -72,7 +72,7 @@
   align-items: center;
   text-align: left;
 
-  padding-top: 3.75rem;
+  padding-top: 3.5rem;
 
   visibility: hidden;
   opacity: 0.4;
@@ -94,6 +94,7 @@
 .tabs-content__title {
   margin-bottom: 1.5rem;
 
+  letter-spacing: 0.8px;
   @include font(2rem, 130%, 700);
   color: $color-gray--900;
 }

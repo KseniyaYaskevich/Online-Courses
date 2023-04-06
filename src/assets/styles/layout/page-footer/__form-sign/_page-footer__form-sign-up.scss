@@ -16,7 +16,7 @@
 
 .form-sign-up__input {
   width: 100%;
-  padding: 0.563rem 0.75rem;
+  padding: 0.55rem 0.75rem;
   margin-bottom: 0.75rem;
 
   @include font(0.75rem, 150%, 400);
@@ -61,7 +61,7 @@
   position: absolute;
   right: 0;
 
-  padding: 0.625rem;
+  padding: 0.4rem 0.9rem;
   color: $color-white;
 
   transform: scale(-1, 1);

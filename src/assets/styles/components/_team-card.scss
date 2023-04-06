@@ -35,6 +35,10 @@
   border-radius: 4px;
 }
 
+.team-card__image {
+  padding-top: 1.25rem;
+}
+
 .team-card__list {
   position: absolute;
   right: 0;
@@ -55,7 +59,7 @@
 
 .team-card__link {
   display: inline-block;
-  padding: 0.5rem;
+  padding: 0rem 0.5rem;
 
   text-decoration: none;
   color: $color-white;

@@ -3,7 +3,7 @@
 }
 
 .blog-card__img {
-  min-height: 300px;
+  height: 295px;
 
   object-fit: cover;
   border-radius: 4px;
@@ -11,14 +11,14 @@
 
 .blog-card__type {
   position: absolute;
-  top: 1rem;
-  left: 1rem;
+  top: 0.7rem;
+  left: 0.7rem;
 
   display: flex;
   align-items: center;
   gap: 0.25rem;
-
-  padding: 0.063rem 0.5rem;
+  
+  padding: 0.1rem 0.5rem;
 
   @include font(0.875rem, 150%);
   color: $color-gray--800;
@@ -68,7 +68,7 @@
       position: absolute;
       top: 0;
       bottom: 0;
-      right: -0.75rem;
+      right: -0.9rem;
 
       margin: auto 0;
 

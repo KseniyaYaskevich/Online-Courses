@@ -1,15 +1,17 @@
 .navbar__logo {
-  margin-right: 3.75rem;
+  margin-right: 4rem;
 }
 
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  padding: 1rem 0;
 }
 
 .logo__icon {
-  margin-right: 0.3rem;
+  margin-right: 0.2rem;
 
   fill: $color-gray--900;
 }
