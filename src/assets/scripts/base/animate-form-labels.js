@@ -1,4 +1,4 @@
-const labels = document.querySelectorAll('#form-label');
+const labels = document.querySelectorAll('.animated-control__label');
 
 const animateFormLabels = () => {
   labels.forEach((label) => {
