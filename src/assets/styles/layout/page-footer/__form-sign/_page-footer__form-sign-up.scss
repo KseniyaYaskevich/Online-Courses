@@ -11,50 +11,24 @@
 }
 
 .form-sign-up__control {
-  position: relative;
+  margin-bottom: 0.75rem;
 }
 
 .form-sign-up__input {
   width: 100%;
   padding: 0.55rem 0.75rem;
-  margin-bottom: 0.75rem;
 
   @include font(0.75rem, 150%, 400);
   color: $color-white;
 
-  background: rgba(255, 255, 255, 0.12);
+  background-color: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 4px;
-
-  &:focus,
-  &:valid {
-    outline: none;
-
-    &+.form-sign-up__label span {
-      opacity: 1;
-
-      transform: translateY(-2rem);
-    }
-  }
 }
 
 .form-sign-up__label {
-  position: absolute;
-  top: 0.563rem;
-  left: 0.75rem;
-
   @include font(0.75rem, 150%, 400);
   color: $color-white;
-
-  pointer-events: none;
-
-  & span {
-    display: inline-block;
-    white-space: pre-wrap;
-
-    opacity: 0.6;
-    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
 }
 
 .form-sign-up__button {
