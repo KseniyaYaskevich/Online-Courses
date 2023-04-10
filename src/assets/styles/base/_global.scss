@@ -46,12 +46,7 @@ img {
   font-family: $font-family--lato;
   color: $color-gray--800;
 
-  overflow-X: hidden;
-
   &--lock {
-    // position: fixed;
-    // right: 0;
-    // left: 0;
     overflow: hidden;
   }
 }
