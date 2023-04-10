@@ -41,6 +41,7 @@ img {
   min-height: 100vh;
   min-width: $mobile-width;
   max-width: 100%;
+  width: 100%;
 
   @include font(1rem, 160%);
   font-family: $font-family--lato;
