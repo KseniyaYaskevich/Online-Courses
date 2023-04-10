@@ -16,6 +16,7 @@
 
 .social__icon {
   margin-right: 0.2rem;
+
   fill: $color-white;
 }
 
@@ -36,16 +37,5 @@
 .social__item {
   &:not(:last-child) {
     margin-right: 1rem;
-  }
-}
-
-.social__icon {
-  fill: $color-white;
-  opacity: 0.6;
-
-  transition: opacity .3s ease-out;
-
-  &:hover {
-    opacity: 1;
   }
 }
