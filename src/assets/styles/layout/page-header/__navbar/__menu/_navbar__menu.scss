@@ -43,6 +43,7 @@
 
 .menu__toggle {
   position: relative;
+  z-index: 11;
 
   display: none;
   width: 4rem;
