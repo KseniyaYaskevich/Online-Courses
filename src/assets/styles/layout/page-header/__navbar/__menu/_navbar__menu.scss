@@ -135,7 +135,8 @@
 
   transition: color .3s ease-out;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-primary;
   }
 

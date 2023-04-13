@@ -48,6 +48,11 @@
     border-color: $color-primary;
   }
 
+  &:hover,
+  &:focus {
+    color: $color-primary;
+  }
+
   @include media-max-tablet {
     flex-basis: 50%;
   }

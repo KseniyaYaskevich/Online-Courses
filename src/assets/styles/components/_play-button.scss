@@ -25,7 +25,8 @@
     transition: box-shadow .3s ease-in;
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:focus::before {
     box-shadow: 0rem 0rem 0rem 1rem rgba(255, 63, 58, 0.2);
   }
 }
