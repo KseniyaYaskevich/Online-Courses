@@ -1,37 +1,36 @@
+import {trapTabKey} from './trap-tab-key';
+
 export const menu = () => {
   const pageBody = document.querySelector('.page__body');
   const navbarMenu = pageBody.querySelector('.navbar__menu');
-  const navbarLinks = pageBody.querySelectorAll('.menu__link');
   const toggleButton = pageBody.querySelector('.menu__toggle');
+  const focusableElementsString = 'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex="0"], [contenteditable]';
+  const focusableElements = navbarMenu.querySelectorAll(focusableElementsString);
+  let lastFocusedElement;
 
-  if (window.matchMedia('(max-width: 768px)').matches) {
-    navbarLinks.forEach((link) => (link.setAttribute('tabIndex', '-1')));
-  }
+  const closeMenu = () => {
+    pageBody.classList.remove('page__body--lock');
+    navbarMenu.classList.remove('is-opened');
 
-  const changeTabindexForLinks = () => {
-    if (navbarMenu.classList.contains('is-opened')) {
-      navbarLinks.forEach((link) => (link.attributes.tabIndex.value = '0'));
-    } else {
-      navbarLinks.forEach((link) => (link.attributes.tabIndex.value = '-1'));
-    }
+    lastFocusedElement.focus();
   };
 
   const onToggleButtonClick = () => {
     pageBody.classList.toggle('page__body--lock');
     navbarMenu.classList.toggle('is-opened');
-    changeTabindexForLinks();
-  };
 
-  const closeMenu = () => {
-    pageBody.classList.remove('page__body--lock');
-    navbarMenu.classList.remove('is-opened');
+    if (navbarMenu.classList.contains('is-opened')) {
+      lastFocusedElement = document.activeElement;
+
+      trapTabKey(focusableElements, navbarMenu);
+
+      navbarMenu.addEventListener('keydown', (e) => {
+        if (e.keyCode === 27 || e.key === 'Escape' || e.key === 'Esc') {
+          closeMenu();
+        }
+      });
+    }
   };
 
   toggleButton.addEventListener('click', onToggleButtonClick);
-
-  document.addEventListener('keydown', (evt) => {
-    if (evt.keyCode === 27 || evt.key === 'Escape' || evt.key === 'Esc') {
-      closeMenu();
-    }
-  });
 };
