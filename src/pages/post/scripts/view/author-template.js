@@ -16,21 +16,21 @@ export const createAuthorTemplate = (item) =>
           <a class="socials-author__link" href="https://instagram.com/" aria-label="Instagram"
             target="_blank">
             <svg class="socials-author__icon" width="17" height="17">
-              <use xlink:href="~assets/icons/sprite.svg#instagram"></use>
+              <use xlink:href="assets/images/sprite.svg#instagram"></use>
             </svg>
           </a>
         </li>
         <li class="socials-author__item">
           <a class="socials-author__link" href="https://twitter.com/" aria-label="twitter" target="_blank">
             <svg class="socials-author__icon" width="18" height="14">
-              <use xlink:href="~assets/icons/sprite.svg#twitter"></use>
+              <use xlink:href="assets/images/sprite.svg#twitter"></use>
             </svg>
           </a>
         </li>
         <li class="socials-author__item">
           <a class="socials-author__link" href="https://linkedin.com/" aria-label="Linked In" target="_blank">
             <svg class="socials-author__icon" width="17" height="17">
-              <use xlink:href="~assets/icons/sprite.svg#linked"></use>
+              <use xlink:href="assets/images/sprite.svg#linked"></use>
             </svg>
           </a>
         </li>
