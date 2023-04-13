@@ -34,8 +34,26 @@
   display: flex;
 }
 
+.social__link {
+  display: flex;
+
+  &:hover,
+  &:focus {
+    .social__icon {
+      opacity: 1;
+    }
+  }
+}
+
 .social__item {
   &:not(:last-child) {
     margin-right: 1rem;
   }
+}
+
+.social__icon {
+  fill: $color-white;
+  opacity: 0.6;
+
+  transition: opacity .3s ease-out;
 }

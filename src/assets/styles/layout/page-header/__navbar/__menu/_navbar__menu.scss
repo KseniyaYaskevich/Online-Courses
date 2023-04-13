@@ -36,6 +36,7 @@
     }
 
     .menu__list {
+      visibility: visible;
       right: 0;
     }
   }
@@ -91,6 +92,7 @@
   list-style: none;
 
   @include media-max-mobile {
+    visibility: hidden;
     position: fixed;
     top: 0;
     right: -110%;
@@ -111,7 +113,7 @@
 
     overflow-y: auto;
 
-    transition: right .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: right .5s cubic-bezier(0.68, -0.55, 0.265, 1.55), visibility .3s ease-out;
   }
 }
 
