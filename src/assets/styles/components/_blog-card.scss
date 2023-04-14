@@ -97,6 +97,9 @@
 }
 
 .blog-card__link {
+  display: inline-flex;
+  align-items: center;
+
   text-decoration: none;
   @include font(1rem, 160%, 700);
   color: $color-gray--900;
