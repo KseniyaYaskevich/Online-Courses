@@ -95,6 +95,7 @@
   @include media-max-mobile {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 0.5rem;
   }
 }
 
