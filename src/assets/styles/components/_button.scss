@@ -83,5 +83,9 @@
     }
   }
 }
+
+@keyframes sheen {
+  100% {
+    transform: rotate(45deg) translateX(1rem) translateY(-8rem);
   }
 }
