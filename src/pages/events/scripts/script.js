@@ -1,5 +1,4 @@
 import 'scripts/script';
-
 import './modules/swiper-events';
 
 import {loadData} from './modules/load-data';
