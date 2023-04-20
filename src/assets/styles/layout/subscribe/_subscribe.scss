@@ -49,12 +49,13 @@
 .form-subscribe {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 1.5rem;
 }
 
 .form-subscribe__control {
+  flex-direction: row;
   width: 35%;
 
   @include media-max-mobile {
@@ -62,19 +63,15 @@
   }
 }
 
+.form-subscribe__label {
+  margin: 0;
+  @include font(1rem, 160%, 400);
+  color: $color-gray--600;
+}
+
 .form-subscribe__input {
   width: 100%;
   padding: 0.813rem 1rem;
 
   @include font(1rem, 160%, 400);
-  color: $color-gray--600;
-
-  background-color: $color-white;
-  border: 1px solid $color-gray--400;
-  border-radius: 4px;
-}
-
-.form-subscribe__label {
-  @include font(1rem, 160%, 400);
-  color: $color-gray--600;
 }

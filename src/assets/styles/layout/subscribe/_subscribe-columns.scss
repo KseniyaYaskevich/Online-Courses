@@ -86,14 +86,13 @@
 .form-subscribe {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   gap: 1.5rem;
 }
 
-.form-subscribe__input-control {
-  position: relative;
-
+.form-subscribe__control {
+  flex-direction: row;
   width: 70%;
 
   @include media-max-mobile {
@@ -101,42 +100,15 @@
   }
 }
 
-.form-subscribe__input {
-  padding: 0.813rem 1rem;
-  width: 100%;
-
+.form-subscribe__label {
+  margin: 0;
   @include font(1rem, 160%, 400);
   color: $color-gray--600;
-
-  background-color: $color-white;
-  border: 1px solid $color-gray--400;
-
-  &:focus,
-  &:valid {
-    outline: none;
-
-    &+.form-subscribe__label span {
-      color: $color-gray--800;
-
-      transform: translateY(-3rem);
-    }
-  }
 }
 
-.form-subscribe__label {
-  position: absolute;
-  top: 0.813rem;
-  left: 1rem;
+.form-subscribe__input {
+  width: 100%;
+  padding: 0.813rem 1rem;
 
   @include font(1rem, 160%, 400);
-  color: $color-gray--600;
-
-  pointer-events: none;
-
-  & span {
-    display: inline-block;
-    white-space: pre-wrap;
-
-    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
 }
