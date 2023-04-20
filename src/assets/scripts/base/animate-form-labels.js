@@ -1,6 +1,6 @@
-const labels = document.querySelectorAll('.animated-control__label');
+export const animateFormLabels = () => {
+  const labels = document.querySelectorAll('.animated-control__label');
 
-const animateFormLabels = () => {
   labels.forEach((label) => {
     label.innerHTML = label.innerText
       .split('')
@@ -8,5 +8,3 @@ const animateFormLabels = () => {
       .join('');
   });
 };
-
-animateFormLabels();
