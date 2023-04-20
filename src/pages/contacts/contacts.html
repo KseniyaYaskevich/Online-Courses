@@ -371,12 +371,175 @@
   </footer>
   <div class="modal-wrapper">
     <div class="modal modal-login">
-      <button class="button modal__close" type="button" aria-label="Close modal"></button>
+      <h2 class="modal__title">Sign in</h2>
+      <p class="modal__subtitle">Sign in to your account using email and password provided during registration.</p>
+      <form class="modal__form form form-modal" action="#" method="post">
+        <p class="form__control form-modal__control">
+          <label class="form__label form-modal__label" for="login-email">
+            Email
+          </label>
+          <input class="form__input form-modal__input" type="email" id="login-email" name="login-email"
+            autocomplete="username" placeholder="Your working email" required>
+        </p>
+        <p class="form__control form-modal__control">
+          <label class="form__label form-modal__label" for="current-login-password">
+            Password
+          </label>
+          <span class="form-modal__password-wrapper">
+            <input class="form__input form-modal__input form-modal__input--password" type="password"
+              id="current-login-password" name="current-login-password" autocomplete="current-password"
+              placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" required>
+            <button class="button form-modal__show-password" type="button"
+              aria-label="Show password as plain text. Warning: this will display your password on the screen.">
+              <svg width="16" height="16">
+                <use xlink:href="~assets/icons/sprite.svg#eye"></use>
+              </svg>
+            </button>
+          </span>
+        </p>
+        <div class="form-modal__inner">
+          <p class="form__checkbox-control">
+            <input class="form__checkbox" type="checkbox" name="keep-signed" id="keep-signed">
+            <label class="form__checkbox-label" for="keep-signed">Keep me signed in</label>
+          </p>
+          <a class="form-modal__link" href="#!">Forgot password?</a>
+        </div>
+        <button class="form-modal__button button button--size-regular button--color-gradient" type="submit">Sign
+          in</button>
+        <p class="form-modal__text">Don't have an account? <a class="form-modal__link" href="#!">Sign up</a></p>
+      </form>
+      <div class="modal__sign-in sign-in">
+        <p class="sign-in__title">Or sign in with</p>
+        <ul class="sign-in__list">
+          <li class="sign-in__item">
+            <a class="sign-in__link" href="#!" aria-label="Sign in with Facebook">
+              <svg class="sign-in__icon" width="20" height="20">
+                <use xlink:href="~assets/icons/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="sign-in__item">
+            <a class="sign-in__link" href="#!" aria-label="Sign in with Google">
+              <svg class="sign-in__icon" width="20" height="20">
+                <use xlink:href="~assets/icons/sprite.svg#google"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="sign-in__item">
+            <a class="sign-in__link" href="#!" aria-label="Sign in with Twitter">
+              <svg class="sign-in__icon" width="20" height="20">
+                <use xlink:href="~assets/icons/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="sign-in__item">
+            <a class="sign-in__link" href="#!" aria-label="Sign in with Linked In">
+              <svg class="sign-in__icon" width="20" height="20">
+                <use xlink:href="~assets/icons/sprite.svg#linked"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button class="button modal__close" type="button" aria-label="Close modal"><span></span></button>
     </div>
   </div>
   <div class="modal-wrapper">
     <div class="modal modal-register">
-      <button class="button modal__close" type="button" aria-label="Close modal"></button>
+      <h2 class="modal__title">Sign up</h2>
+      <p class="modal__subtitle">Registration takes less than a minute but gives you full control over your studying.
+      </p>
+      <form class="modal__form form form-modal" action="#" method="post">
+        <p class="form__control form-modal__control">
+          <label class="form__label form-modal__label" for="register-name">
+            Full Name
+          </label>
+          <input class="form__input form-modal__input" type="text" id="register-name" name="register-name"
+            placeholder="Your full name" required>
+        </p>
+        <p class="form__control form-modal__control">
+          <label class="form__label form-modal__label" for="register-email">
+            Email
+          </label>
+          <input class="form__input form-modal__input" type="email" id="register-email" name="register-email"
+            placeholder="Your working email" autocomplete="username" required>
+        </p>
+        <p class="form__control form-modal__control">
+          <label class="form__label form-modal__label" for="register-password">
+            Password
+          </label>
+          <span class="form-modal__password-wrapper">
+            <input class="form__input form-modal__input form-modal__input--password" type="password"
+              id="register-password" name="register-password"
+              placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" autocomplete="new-password" required>
+            <button class="button form-modal__show-password" type="button"
+              aria-label="Show password as plain text. Warning: this will display your password on the screen.">
+              <svg width="16" height="16">
+                <use xlink:href="~assets/icons/sprite.svg#eye"></use>
+              </svg>
+            </button>
+          </span>
+        </p>
+        <p class="form__control form-modal__control">
+          <label class="form__label form-modal__label" for="confirmed-register-password">
+            Confirm Password
+          </label>
+          <span class="form-modal__password-wrapper">
+            <input class="form__input form-modal__input form-modal__input--password" type="password"
+              id="confirmed-register-password" name="confirmed-register-password"
+              placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" autocomplete="new-password" required>
+            <button class="button form-modal__show-password" type="button"
+              aria-label="Show password as plain text. Warning: this will display your password on the screen.">
+              <svg width="16" height="16">
+                <use xlink:href="~assets/icons/sprite.svg#eye"></use>
+              </svg>
+            </button>
+          </span>
+        </p>
+        <div class="form-modal__inner">
+          <p class="form__checkbox-control">
+            <input class="form__checkbox" type="checkbox" name="remember-me" id="remember-me">
+            <label class="form__checkbox-label" for="remember-me">Remember me</label>
+          </p>
+        </div>
+        <button class="form-modal__button button button--size-regular button--color-gradient" type="submit">Sign
+          up</button>
+        <p class="form-modal__text">Already have an account? <a class="form-modal__link" href="#!">Sign in</a></p>
+      </form>
+      <div class="modal__sign-in sign-in">
+        <p class="sign-in__title">Or sign in with</p>
+        <ul class="sign-in__list">
+          <li class="sign-in__item">
+            <a class="sign-in__link" href="#!" aria-label="Sign in with Facebook">
+              <svg class="sign-in__icon" width="20" height="20">
+                <use xlink:href="~assets/icons/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="sign-in__item">
+            <a class="sign-in__link" href="#!" aria-label="Sign in with Google">
+              <svg class="sign-in__icon" width="20" height="20">
+                <use xlink:href="~assets/icons/sprite.svg#google"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="sign-in__item">
+            <a class="sign-in__link" href="#!" aria-label="Sign in with Twitter">
+              <svg class="sign-in__icon" width="20" height="20">
+                <use xlink:href="~assets/icons/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="sign-in__item">
+            <a class="sign-in__link" href="#!" aria-label="Sign in with Linked In">
+              <svg class="sign-in__icon" width="20" height="20">
+                <use xlink:href="~assets/icons/sprite.svg#linked"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button class="button modal__close" type="button" aria-label="Close modal"><span></span></button>
     </div>
   </div>
 </body>
