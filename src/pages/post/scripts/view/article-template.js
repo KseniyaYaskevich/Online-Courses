@@ -8,8 +8,8 @@ export const createArticleTemplate = (item) =>
     </span>
     <span class="article__category">${item.category}</span>
     </div>
-    <h1 class="article__title section-heading__title">${item.title}
-    </h1>
+    <h2 class="article__title section-heading__title">${item.title}
+    </h2>
     <div class="article__inner article__inner--space-between">
         <div class="article__details details">
             <span class="details__item">
