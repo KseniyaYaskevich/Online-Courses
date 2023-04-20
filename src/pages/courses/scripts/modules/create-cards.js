@@ -1,4 +1,4 @@
-import {render} from 'scripts/modules/utils';
+import {render} from 'scripts/base/utils';
 import {createCourseTemplate} from 'scripts/view/course-template';
 import {createLoadButtonTemplate} from '../view/load-button-template';
 

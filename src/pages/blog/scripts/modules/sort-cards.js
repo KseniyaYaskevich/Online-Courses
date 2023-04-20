@@ -1,4 +1,4 @@
-import {render} from 'scripts/modules/utils';
+import {render} from 'scripts/base/utils';
 import {createBlogItemTemplate} from 'scripts/view/blog-item-template';
 
 const sortingButtons = document.querySelectorAll('.blog-sorting__button');

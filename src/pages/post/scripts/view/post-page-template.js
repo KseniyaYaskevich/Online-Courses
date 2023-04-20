@@ -1,4 +1,4 @@
-import {render} from 'scripts/modules/utils';
+import {render} from 'scripts/base/utils';
 import {createArticleTemplate} from './article-template';
 import {createAuthorTemplate} from './author-template';
 

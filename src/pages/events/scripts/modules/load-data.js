@@ -1,6 +1,6 @@
-import {getData} from 'scripts/modules/get-data';
-import {getItems} from 'scripts/modules/utils';
-import {render} from 'scripts/modules/utils';
+import {getData} from 'scripts/base/get-data';
+import {getItems} from 'scripts/base/utils';
+import {render} from 'scripts/base/utils';
 import {createEventTemplate} from 'scripts/view/event-template';
 
 const cardsWrapper = document.querySelector('.events__list');

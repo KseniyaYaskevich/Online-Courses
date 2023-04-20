@@ -1,4 +1,4 @@
-import {render} from 'scripts/modules/utils';
+import {render} from 'scripts/base/utils';
 import {createCuratorTemplate} from './curator-template';
 import {createEventListTemplate} from './event-list-template';
 

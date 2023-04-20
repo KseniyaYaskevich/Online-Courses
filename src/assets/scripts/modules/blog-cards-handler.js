@@ -1,4 +1,4 @@
-import {getData} from './get-data';
+import {getData} from '../base/get-data';
 import {setItem} from '../base/storage';
 
 export const blogCardsHandler = () => {
