@@ -936,7 +936,8 @@
           <span class="form-modal__password-wrapper">
             <input class="form__input form-modal__input form-modal__input--password" type="password"
               id="current-login-password" name="current-login-password" autocomplete="current-password"
-              placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" required>
+              placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;"
+              required>
             <button class="button form-modal__show-password" type="button"
               aria-label="Show password as plain text. Warning: this will display your password on the screen.">
               <svg width="16" height="16">
@@ -1092,10 +1093,36 @@
   </div>
   <div class="modal-wrapper">
     <div class="modal modal-video">
-      <!-- <iframe class="modal-video__player" width="320" height="320"
-        src="https://www.youtube.com/embed/Gb4ffW3Nq5Q?enablejsapi=1" title="YouTube video player" style="border:0;"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe> -->
+      <div class="modal-video__player">
+        <video class="modal-video__viewer" src="~assets/video/ArcaneMusicVideo.mp4"
+          poster="~assets/images/common/video/arcane-video-poster.jpg"></video>
+        <button class="button modal-video__button" type="button" aria-label="Play video">
+          <svg width="100" height="100">
+            <use xlink:href="~assets/icons/sprite.svg#play"></use>
+          </svg>
+        </button>
+        <div class="modal-video__controls controls">
+          <div class="controls__inner">
+            <button class="button controls__button controls__button--play" type="button"
+              aria-label="Play or pause video">
+              <svg width="30" height="30">
+                <use xlink:href="~assets/icons/sprite.svg#play"></use>
+              </svg>
+            </button>
+            <input class="controls__slider controls__slider--progress" type="range" value="0" min="0" max="100"
+              step="1">
+          </div>
+          <div class="controls__inner">
+            <button class="button controls__button controls__button--volume" type="button"
+              aria-label="Turn video sound on or off">
+              <svg width="30" height="30">
+                <use xlink:href="~assets/icons/sprite.svg#volume"></use>
+              </svg>
+            </button>
+            <input class="controls__slider controls__slider--volume" type="range" value="20" min="0" max="100" step="5">
+          </div>
+        </div>
+      </div>
       <button class="button modal__close" type="button" aria-label="Close modal"><span></span></button>
     </div>
   </div>

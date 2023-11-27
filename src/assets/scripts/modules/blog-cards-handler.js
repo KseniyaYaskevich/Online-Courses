@@ -20,12 +20,12 @@ export const blogCardsHandler = () => {
     }
   };
 
-  const addClickListener = (evt) => {
+  const addWheelClickListener = (evt) => {
     if (evt.which === 1 || evt.which === 2) {
       onCardsContainerClick(evt);
     }
   };
 
   cardsContainer.addEventListener('click', onCardsContainerClick);
-  cardsContainer.addEventListener('mousedown', addClickListener);
+  cardsContainer.addEventListener('mousedown', addWheelClickListener);
 };

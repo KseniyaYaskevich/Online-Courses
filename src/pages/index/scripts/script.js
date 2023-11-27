@@ -8,6 +8,7 @@ import {loadData} from './modules/load-data';
 import {courseCardsHandler} from 'scripts/modules/course-cards-handler';
 import {eventCardsHandler} from 'scripts/modules/event-cards-handler';
 import {blogCardsHandler} from 'scripts/modules/blog-cards-handler';
+import {videoPlayer} from 'scripts/modules/video-player';
 
 const COURSE_CARDS_NUMBER = 6;
 const EVENT_CARDS_NUMBER = 3;
@@ -20,3 +21,5 @@ loadData(BLOG_CARDS_NUMBER, 'blog');
 courseCardsHandler();
 eventCardsHandler();
 blogCardsHandler();
+
+videoPlayer();

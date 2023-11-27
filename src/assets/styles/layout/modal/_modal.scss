@@ -143,9 +143,10 @@
 .form-modal__input {
   &--password {
     width: 100%;
+    letter-spacing: 0.25rem;
 
     &::placeholder {
-      letter-spacing: 0.25rem;
+      color: $color-gray--800;
     }
   }
 }
@@ -162,6 +163,18 @@
   padding: 0.4rem 0.9rem;
 
   color: $color-gray--800;
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $color-primary;
+    }
+  }
+
+  svg {
+    fill: currentColor;
+    transition: fill .4s ease-out;
+  }
 }
 
 .form-modal__inner {

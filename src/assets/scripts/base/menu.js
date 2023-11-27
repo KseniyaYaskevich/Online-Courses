@@ -4,8 +4,6 @@ export const menu = () => {
   const pageBody = document.querySelector('.page__body');
   const navbarMenu = pageBody.querySelector('.navbar__menu');
   const toggleButton = pageBody.querySelector('.menu__toggle');
-  const focusableElementsString = 'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex="0"], [contenteditable]';
-  const focusableElements = navbarMenu.querySelectorAll(focusableElementsString);
   let lastFocusedElement;
 
   const closeMenu = () => {
@@ -22,7 +20,7 @@ export const menu = () => {
     if (navbarMenu.classList.contains('is-opened')) {
       lastFocusedElement = document.activeElement;
 
-      trapTabKey(focusableElements, navbarMenu);
+      trapTabKey(navbarMenu);
 
       navbarMenu.addEventListener('keydown', (e) => {
         if (e.keyCode === 27 || e.key === 'Escape' || e.key === 'Esc') {

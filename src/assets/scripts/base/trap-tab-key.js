@@ -1,4 +1,6 @@
-export const trapTabKey = (focusableElements, elem) => {
+export const trapTabKey = (elem) => {
+  const focusableElementsString = 'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex="0"], [contenteditable]';
+  let focusableElements = elem.querySelectorAll(focusableElementsString);
   focusableElements = Array.prototype.slice.call(focusableElements);
 
   const firstTabStop = focusableElements[0];
